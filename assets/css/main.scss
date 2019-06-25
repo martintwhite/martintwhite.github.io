@@ -1,0 +1,86 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+//
+$content-width:    1000px !default;
+$base-font-size:   14px !default;
+
+@import "minima";
+
+// change background color for the site header and footer:
+//.site-header {background-color: darkslategray;}
+//.site-footer {background-color: darkslategray;}
+
+// change font color for the text in the site header and footer:
+//.site-title {&:visited {color: black;}}
+//.site-nav {.page-link {color: black;}}
+//.site-footer {color: black;}
+//.footer-col-wrapper {color: black;}
+
+// fix color for email link:
+//.u-email {&:hover {text-decoration: underline; color: white;}}
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
+.PageNavigation .nextonly {
+  text-align: right;
+  width: 100%;
+}
+
+.site-header {
+  border-top: 1px solid $grey-color-light;
+  border-bottom: 1px solid $grey-color-light;
+  min-height: $spacing-unit * 1.5;
+  line-height: $base-line-height * $base-font-size * 2;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+
+#twocol_container {
+    display: table;
+}
+#twocol_container > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+#DivA {
+    width: 50%;
+}
+#DivB {
+    vertical-align:middle;
+    width: 50%;
+}
+
+
+
