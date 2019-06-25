@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Website live!"
-date:   2019-06-12 16:55:00 +0100
+date:   2019-06-24 16:55:00 +0100
 categories: welcome
 ---
 Well this is exciting - my personal research website is now live.
