@@ -24,14 +24,16 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: UA-142764300-1
 
 linkedin_username: martin-t-white
-#github_username: martintwhite
+github_username: martintwhite
+twitter_username: MartinTWhite
 
 show_excerpts: false
 
 minima:
   social_links:
     linkedin: martin-t-white
-    github:  jekyll
+    github:  martintwhite
+    twitter: MartinTWhite
     rss: rss
 
 # Build settings
