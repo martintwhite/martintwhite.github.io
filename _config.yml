@@ -27,7 +27,7 @@ linkedin_username: martin-t-white
 github_username: martintwhite
 twitter_username: MartinTWhite
 
-show_excerpts: false
+show_excerpts: true
 
 minima:
   social_links:

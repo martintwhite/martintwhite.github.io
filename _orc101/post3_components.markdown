@@ -3,7 +3,9 @@ layout: orc101_page
 title:  "3. Components of a thermal power system"
 ---
 
-So far we have introduced the concept of thermal power system and the concept of a working fluid. As a recap, a thermal power system is composed of four distinct process, namely compression, heating, expansion and cooling, that are coupled together to form the system. A working fluid is the fluid that undergoes each of these processes in turn.
+So far we have introduced the concept of thermal power system and the concept of a working fluid. In this section we will take a look at the four main components that make up this these systems, namely a pump or compressor, an expander and two heat exchangers.
+
+As a recap, a thermal power system is composed of four distinct process, namely compression, heating, expansion and cooling, that are coupled together to form the system. A working fluid is the fluid that undergoes each of these processes in turn.
 
 Within these webpages, we will focus on two of the main types of thermal power system, which are the *Brayton cycle* and the *Rankine cycle*. These cycles are widely used for power generation, and form the basis of gas power plants and steam power plants respectively. In both of these systems, each of the four processes is obtained by a different component. Thus, a simple thermal power system can be thought of as the combination of four components that each have a particular job to do. It is worth noting that there do exist more complex systems that utilise a larger number of components, but these systems are largely just variations on this basic system.
 

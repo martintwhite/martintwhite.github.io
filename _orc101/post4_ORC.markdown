@@ -3,6 +3,8 @@ layout: orc101_page
 title:  "4. What is an organic Rankine cycle?"
 ---
 
+Within the fourth section of this ORC-101 we will focus a little more on a specific thermal-power system that is suitable for converting relatively low-temperature heat into mechanical power. This cycle is referred to as the *organic Rankine cycle*.
+
 Within ORC-101 we have so far introduced the concept of a thermal power system and a working fluid. We have also introduced the concept of a *Rankine cycle* and a *Brayton cycle*, noting that the difference between the two is that a Rankine cycle operates with fluid that is either in a liquid or a gas state within the system, whilst within a Brayton cycle the fluid remains in the gas state at all times.
 
 Thus, to recap, the operation of a Rankine cycle can be described as follows:
