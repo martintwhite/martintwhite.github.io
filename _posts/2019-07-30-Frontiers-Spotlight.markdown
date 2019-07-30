@@ -29,10 +29,10 @@ As a caveat, it is worth mentioning that the performance of the system may not b
 <p><i>Results obtained using the method developed within this research. The left image shows the relationship between the temperature of heat source (in the horizontal direction) and the critical temperature of the fluid (in the vertical direction) which is one of the key fluid parameters that determines the fluid behaviour. The right image shows how the results obtained using the new model map onto real fluids.</i></p>
 
 ### Acknowledgement 
-*This work was completed as part of the [NextORC project](https://www.city.ac.uk/nextorc), which is funded by the UK Engineering and Physical Sciences Research Council (EPSRC) [grant number: [EP/P009131/1](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/P009131//1)].*
+*This work was completed as part of the [NextORC project](https://www.city.ac.uk/nextorc), which is funded by the UK Engineering and Physical Sciences Research Council (EPSRC) [grant number: [EP/P009131/1](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/P009131/1)].*
 
 *More details of this research can be found in the following scientific articles, which were published as open-access articles under the Creative Commons Attribution License (CC BY 4.0).*
 
-*White, M., Sayma, A., 2019, "Simultaneous cycle optimization and fluid selection for ORC systems accounting for the effect of the operating conditions on turbine efficiency", Front Energy Res, 7, 50. [https://doi: 10.3389/fenrg.2019.00050](https://doi: 10.3389/fenrg.2019.00050)*
+*White, M., Sayma, A., 2019, "Simultaneous cycle optimization and fluid selection for ORC systems accounting for the effect of the operating conditions on turbine efficiency", Front Energy Res, 7, 50. [https://doi: 10.3389/fenrg.2019.00050](https://doi.org/10.3389/fenrg.2019.00050)*
 
 *White, M., Sayma, A., 2018, “A generalised assessment of working fluids and radial turbines for non-recuperated subcritical organic Rankine cycles”, Energies, 11(4), 800. [https://doi.org/10.3390/en11040800](https://doi.org/10.3390/en11040800)*

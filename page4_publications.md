@@ -7,7 +7,7 @@ permalink: /publications/
 Below is a list of all of my scientific publications to date. If you are interested in any of these and want to find out more, please get in touch.
 
 <h3>Journal articles</h3>
-- **White, M.**, Sayma, A., 2019, "Simultaneous cycle optimization and fluid selection for ORC systems accounting for the effect of the operating conditions on turbine efficiency", Front Energy Res, 7, 50. [https://doi: 10.3389/fenrg.2019.00050](https://doi: 10.3389/fenrg.2019.00050)
+- **White, M.**, Sayma, A., 2019, "Simultaneous cycle optimization and fluid selection for ORC systems accounting for the effect of the operating conditions on turbine efficiency", Front Energy Res, 7, 50. [https://doi: 10.3389/fenrg.2019.00050](https://doi.org/10.3389/fenrg.2019.00050)
 - **White, M.**, Oyewunmi, O., Chatzopoulou, M. et al., 2018, “Computer-aided working-fluid design and thermoeconomic optimisation of novel ORC systems for waste-heat recovery applications”, Energy, 161, 1181—1198. [https://doi.org/10.1016/j.energy.2018.07.098](https://doi.org/10.1016/j.energy.2018.07.098)
 - **White, M.**, Sayma, A., 2018, “A generalised assessment of working fluids and radial turbines for non-recuperated subcritical organic Rankine cycles”, Energies, 11(4), 800. [https://doi.org/10.3390/en11040800](https://doi.org/10.3390/en11040800)
 - **White, M.**, Sayma, A., Markides, C., 2018, “Working-fluid replacement in supersonic organic Rankine cycle turbines”, J Eng Gas Turb Power, 140(9), 091703. [https://doi.org/10.1115/1.4038754](https://doi.org/10.1115/1.4038754)
