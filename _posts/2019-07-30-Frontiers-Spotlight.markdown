@@ -3,7 +3,7 @@ layout: post
 title:  "Simultaneous cycle and fluid optimisation for ORC systems"
 date:   2019-07-30 07:32:00 +0100
 categories: research
-image: /assets/camd_schematic.jpg
+image: /assets/camd_schematic.png
 ---
 For those in academia the summer months generally provides the opportunity to focus on getting some research done, alongside maybe a holiday. Anyway, with this in mind I thought this month it would be great to shine a spotlight on some my recently published research looking at a new method to identify optimal ORC systems.
 
