@@ -4,14 +4,14 @@ title:  "Award of Royal Academy of Engineering Research Fellowship"
 date:   2019-08-27 13:45:00 +0000
 categories: research
 ---
-This month I have been extremely pleased to be able to officially announce that I have been awarded one of this year’s round of [https://www.raeng.org.uk/grants-and-prizes/support-for-research/raeng-research-fellowship](Royal Academy of Engineering Research Fellowships).
+This month I have been extremely pleased to be able to officially announce that I have been awarded one of this year’s round of [Royal Academy of Engineering Research Fellowships](https://www.raeng.org.uk/grants-and-prizes/support-for-research/raeng-research-fellowship).
 
 This scheme provides five years of funding and mentorship for early-career researchers, and will help me to advance my research career by enabling me to concentrate on conducting fundamental research in my chosen research area for a substantial period of time.
 
 Further details of this news story can be found below:
-[https://www.raeng.org.uk/news/news-releases/2019/august/academy-supports-engineering-excellence-with-18-ne](Academy supports engineering excellence with 18 new Research Fellowships)
+[Academy supports engineering excellence with 18 new Research Fellowships](https://www.raeng.org.uk/news/news-releases/2019/august/academy-supports-engineering-excellence-with-18-ne)
 
-[https://www.city.ac.uk/news/2019/august/dr-martin-white-awarded-prestigious-royal-academy-of-engineering-research-fellowship](Dr Martin White awarded prestigious Royal Academy of Engineering Research Fellowship)
+[Dr Martin White awarded prestigious Royal Academy of Engineering Research Fellowship](https://www.city.ac.uk/news/2019/august/dr-martin-white-awarded-prestigious-royal-academy-of-engineering-research-fellowship)
 
 Specifically, during my fellowship, I will be devoting my efforts to developing next generation waste-heat recovery systems based on two-phase expansion. 
 
