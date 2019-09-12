@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "A successful trip to Athens for ORC 2019"
+date:   2019-09-12 09:00:00 +1200
+categories: conference
+image: /assets/pantheon_me.jpg
+---
+So the beginning of September brought the start of my RAEng Research Fellowship, and also my appointment as a Lecturer at City. It has also been a busy few weeks for conferences with papers being presented at both the [11<sup>th</sup> International Conference on Compressors and their Systems](https://www.city.ac.uk/events/conferences/compressorsconference) held in London, and the [5<sup>th</sup> International Seminar on ORC Power Systems](https://www.orc2019.com/) held in Athens.
+
+Unfortunately, the scheduling gods were against me with both conferences being held over the same dates, and unsurprisingly the ability to be in two places at once still eludes me. As such I ended up attending the ORC conference in Athens, whilst my co-author kindly agreed to present our paper in London. It is a shame as it would have been great to see all the great work that was being presented there, and also to be part of the effort to showcase the on-going research at City. 
+
+The fifth iteration of the ORC conference was a great and really enjoyable conference with plenty of interesting talks in all aspects of ORC technology including turbo-machinery, system modelling and optimisation, experimental testing and insights from industry. It is always great to catch-up with others from the international community, and I have left with a renewed sense of purpose with plenty of new ideas to explore in the future. 
+
+Besides the technical content, the conference was extremely well organised and in a great city with some great food and a rich history, not to mention the excellent tour of the Acropolis museum and the proceeding conference dinner! Following the end of the conference, I took the opportunity to climb up to the Acropolis and see it for myself. Of course, I took the obligatory selfie (alongside everybody else up there) before heading back down into the city for some dinner on my last night in Athens.
+
+<p></p>
+<div style="text-align:center">
+	<img src="{{site.baseurl}}/assets/presentation_me.jpg" alt="presentation_me" style="width:281px;" /><img src="{{site.baseurl}}/assets/pantheon_me.jpg" alt="pantheon_me" style="width:500px;" />
+</div>
+<p></p>
+
+All in all, a great conference and I look forward to the next iteration of this conference in 2021! 
+
+Watch this space in the coming few weeks for a post that will shine a spotlight on the research that was presented at these conferences. For now, the two conferences papers can be found from the links below:
+
+[Paper from the 5<sup>th</sup> International Seminar on ORC Power Systems](https://www.orc2019.com/online/proceedings/display_manuscript/113.htm)
+
+[Paper from the 11<sup>th</sup> International Conference on Compressors and Their Systems](https://iopscience.iop.org/article/10.1088/1757-899X/604/1/012086)
