@@ -25,6 +25,7 @@ PhD in Mechanical Engineering, City, University of London, UK, Apr 2012 – Oct 
 MEng in Mechanical Engineering, University of Southampton, UK, Oct 2007 – Jul 2011<br>
 
 ### Employment
-Research Fellow, City, University of London, May 2018 – present<br>
+Lecturer in Thermal Power and RAEng Research Fellow, City, University of London, Sep 2019 - Present<br>
+Research Fellow, City, University of London, May 2018 – Aug 2019<br>
 Postdoctoral Research Associate, City, University of London, May 2017 – Apr 2018<br>
 Postdoctoral Research Associate, Imperial College London, May 2016 – Apr 2017
