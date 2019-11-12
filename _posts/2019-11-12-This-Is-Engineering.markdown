@@ -4,7 +4,7 @@ title:  "This Is Engineering Day (6th November 2019)"
 date:   2019-11-12 09:00:00 +0000
 categories: outreach
 ---
-So, you’re an engineer, right? Can you this fix this? If you are an engineer, engineering student, or just somebody with an interest in engineering, I would hazard a guess that someone has asked you this at some point in the not so distant past.
+So, you’re an engineer, right? Can you fix this? If you are an engineer, engineering student, or just somebody with an interest in engineering, I would hazard a guess that someone has asked you this at some point in the not so distant past.
 
 Whilst it is true that many of us do enjoy the task of fixing things, or just solving a problem, this perception towards engineering is one that has always slightly annoyed me. And if I am to be completely honest, yes, there have been times when I have even referred to myself as an ‘engineering scientist’, or even just a ‘scientist’, in an attempt to distance myself from any preconceptions attached to the profession.
 
