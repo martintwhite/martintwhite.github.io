@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Research spotlight: Thermal-energy storage for waste-heat recovery applications"
+date:   2020-02-13 08:00:00 +0000
+categories: research
+image: /assets/TES_WHR.png
+---
+This month I wanted to take another opportunity to shine a spotlight on some of my latest research – this time about thermal-energy storage and waste-heat recovery. So, what’s it all about? What does waste-heat recovery mean, what is thermal-energy storage, and why are these topics important?
+
+**_OK, so let’s start with waste-heat recovery._**
+
+Did you know that just under 20% of the energy that is consumed during the production of many items ranging from materials such as metals, glass and cement, to food and drink, is unused and eventually lost to the environment? Well, that wasted energy generally takes the form of waste heat, and is carried away in hot exhaust gases or hot liquid streams that leave the production process.
+
+In the vast majority of cases this heat has been generated from burning fossil fuels. We all know about climate change and environmental pollution so there is certainly an environmental incentive to recovering that waste heat. There is also an economic benefit since that loss of energy loss also represents a monetary loss for those industries (they have to pay for that energy in the first place). 
+
+So then, over the past decade there has been a growing interest in developing technologies that can recover that waste heat and do something useful with it. And one of those options is to use that heat to generate electricity, with our friend the [organic Rankine cycle (ORC)]({{site.baseurl}}{% link page1_ORC_101.md %}).
+
+**_Great. And what about thermal-energy storage?_**
+
+One issue that may arise from recapturing waste heat could be that a particular waste-heat source may not be constantly available. What if the waste heat is only available at certain times during the day, or at one minute is available at 100 °C and the next at 200 °C? Unfortunately, ORC systems perform best when heat is provided to it in a consistent manner, and this is where thermal-energy storage comes in. 
+
+We are all familiar with batteries - a form of electrical energy storage - that stores energy for later use. Well thermal-energy storage is exactly the same concept, but instead of storing electricity, we store heat, or thermal energy, for later use.
+
+You are probably already aware of a couple examples of thermal energy storage. Maybe you have a hot water tank with an immersion heater that heats up the water in the early hours of the morning and provides this at a later time? Alternatively, you may be unlucky enough to live in a block of flats built 50 or so years ago with no gas supply (as I do) and rely on electrical storage heaters for heating. In that case electricity is used during the night to heat up large bricks, which then release that heat to the room over the course of the day. These are both forms of thermal-energy storage.
+
+In the context of generating electricity from waste heat, the use of thermal-energy storage allows waste heat to be captured and stored, and then provided to the ORC system to generate electricity at a steady rate at a later time. Thus, the coupling of ORC systems with thermal-energy storage allows a larger amount of heat to be captured and eventually converted into useful electricity.
+
+<div style="text-align:center">
+	<img src="{{site.baseurl}}/assets/TES_WHR.png" alt="TES_WHR" style="width:750px;" />
+</div>
+<p> </p>
+
+**_So, what about the research?_**
+
+Well, my latest work investigates the role that a particular form of thermal-energy storage, namely latent-heat thermal-energy storage, can have in waste-heat recovery applications. *Latent-heat* refers to the energy that is absorbed or released when a material changes from one phase to another, and common examples of phase change include boiling water, condensation, and the freezing and melting of ice. Within the context of waste-heat recovery, the waste heat is used to melt a solid material, which can then be stored in a liquid form. Then, at a later stage when heat is required, heat is extracted from that liquid converting it back into a solid form.
+
+Specifically, the paper explores how best to design systems that use a combination of latent-heat thermal energy storage and ORC technology to maximise the amount of electricity that can be generated from waste-heat recovery different waste-heat streams.
+
+[For the those interested the full paper is available for free here.](https://doi.org/10.1016/j.ijheatmasstransfer.2019.119111)
