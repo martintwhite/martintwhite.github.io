@@ -10,7 +10,7 @@ This week was a big one - but not in terms of my career. My wife clinched the si
 
 The [STEM for Britain competition](http://www.setforbritain.org.uk/index.asp) is a nationwide event which encourages early career researchers (PhDs and Postdocs) within Science, Technology, Engineering and Mathematics fields to apply to present their research within the UK House of Commons. The event itself is very prestigious and to be invited to just present your research is a great achievement (I applied twice and didn’t get through) - let alone to come second in your track.
 
-To me I have always seen my wife’s potential and her success comes as no real surprise to me. Nonetheless, it is really nice to see her get some rewards for her hard work and to see how she has flourished over the few years having found a pursuit that genuinely excites her.
+To me I have always seen my wife’s potential and her success comes as no real surprise to me. Nonetheless, it is really nice to see her get some rewards for her hard work and to see how she has flourished over the past few years having found a pursuit that genuinely excites her.
 
 Now, to give some background on why this achievement means so much. 
 
@@ -22,7 +22,7 @@ Now I will be the first to say that I owe a significant debt to my wife for a nu
 
 In all honesty, I have had a relatively straightforward ride through the landscape from school to undergraduate degree to PhD to postdoc to lecturer, in a field that I have been in training for for as long as I can remember. And my wife has always been by my side.
 
-On the other side of the coin, at the mid-way point during my PhD my wife started to realise there is more to life than credit cards and with some gentle encouragement gave up her growing career to pursue a completely new degree in the area of Natural Sciences through the Open University. Now, considering that she had done very little science since her GCSEs, that was an extremely brave move and one that I am not sure many of us would have the courage to do. Since that initial step into the darkness, she has only grown in strength, having since graduated with a First Class, secured a place on a Centre for Doctoral Training, obtained an MSc (with Distinction), and subsequently began a PhD in Computational Chemistry at a leading UK university; with the latter taking her up to today and her success at STEM for Britain.
+On the other side of the coin, at the mid-way point during my PhD my wife started to realise there is more to life than credit cards and with some gentle encouragement gave up her growing career to pursue a completely new degree in the area of Natural Sciences through the Open University. Now, considering that she had done very little science since her GCSEs, that was an extremely brave move and one that I am not sure many of us would have the courage to do. Since that initial step into the unknown, she has only grown in strength, having since graduated with a First Class, secured a place on a Centre for Doctoral Training, obtained an MSc (with Distinction), and subsequently began a PhD in Computational Chemistry at a leading UK university; with the latter taking her up to today and her success at STEM for Britain.
 
 For this reason, I am extremely proud of what she has achieved, and why this achievement means so much. So, if you are looking for a true source of inspiration of what can be achieved if you are brave enough to jump into something new two feet first, and particularly take up a new career within STEM, then follow her lead – not mine.
 
