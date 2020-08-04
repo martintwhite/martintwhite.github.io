@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "The new era of scientific conferences?"
+date:   2020-08-4 12:00:00 +0000
+categories: research
+image: /assets/Rankine2020_Title.png
+---
+
+The last time I posted something, it was in mid-March and my wife had triumphantly returned from [STEM for Britain]({{site.baseurl}}{% link _posts/page1_ORC_101.md %}). Fast forward a week or two, and well, we all know what happened. Evidently a few months have passed and the lack of a train ride on which to write has taken its toll on my blog activity. So, as we now settle into the so-called ‘new normal’, I thought it was about time I got back to it.
+
+Easing myself in gently, I wanted to talk about last week, which involved a new experience for me - my first online conference! The conference was [Rankine 2020](https://ior.org.uk/events/rankine2020), which marked the anniversary of William Rankine’s birth, and focussed on Advances in Cooling, Heating and Power Generation. Within the conference I presented my work exploring working-fluid selection for [organic Rankine cycles]({{site.baseurl}}{% link page1_ORC_101.md %}). More on that later perhaps...
+
+I must admit I entered into the conference being a little unsure of what to expect, but it turned out to be a great experience and the organisers did a great job in organising an interesting event. There were some excellent talks and keynotes, interesting discussions, and opportunities for networking. Some of the nice things about a attending a conference – visiting a new city, enjoying some culture and eating too many biscuits – are arguably missed. But, a pre-recorded presentation arguably made for a slicker presentation and removed any pre-presentation nerves and all the cost and air miles associated with attending were removed - this last point is particularly relevant considering my research is primary aimed at sustainable energy production...
+
+*Would I honestly say I enjoyed it as much as a face-to-face conference?*
+Probably not.
+
+*But, does it facilitate a far more accessible (both physically and financially) and environmentally-friendly way to disseminate your research to the community?*
+Absolutely.
+
+*Would I attend another?*
+Yep.
+
+*Will they be here to stay?*
+Let’s wait and see. But for the sake of the environment I would like to think so.
+
+<div style="text-align:center">
+	<img src="{{site.baseurl}}/assets/Rankine2020_Title.png" alt="R2020_Title" style="width:600px;" />
+</div>
+*The work presented was entitled “Fluid selection for small-scale Rankine cycle plants: Can you draw some lines in the sand?” and attempted to identify general guidelines for fluid and cycle selection for small-scale Rankine cycle power systems based on application.*
+
+<div style="text-align:center">
+	<img src="{{site.baseurl}}/assets/Rankine2020_Results.png" alt="R2020_Res" style="width:600px;" />
+</div>
+*Twenty fluids were compared within 40 different applications and given a mean score (green diamonds) ranging from best performing (1) to worst performing (20).*
