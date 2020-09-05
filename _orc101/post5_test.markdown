@@ -7,7 +7,7 @@ This is somebody's poster and audio desc.
 
 <p></p>
 <div style="text-align:center">
-<iframe src="https://martintwhite.github.io/assets/posters/Poster_Salma_Salah.pdf&embedded=true" style="width:800px"; frameborder="0></iframe>
+<iframe src="https://martintwhite.github.io/assets/posters/Poster_Salma_Salah.pdf&embedded=true" style="width:800px"; frameborder="0"></iframe>
 </div>
 <p></p> 
 
