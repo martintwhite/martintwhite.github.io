@@ -1,18 +1,16 @@
 ---
 layout: orc101_page
-title:  "Poster XXX"
+title:  "Salma Salah"
 ---
-
-This is somebody's poster and audio desc.
 
 <p></p>
 <div style="text-align:center">
-<embed src="/assets/posters/Poster_Salma Salah.pdf" width="500" height="375">
+<embed src="/assets/posters/Poster_Salma Salah.pdf" width="100%">
 </div>
 <p></p>
 
 <figure>
-    <figcaption>Listen to the description:</figcaption>
+    <figcaption>Listen to Salma's description:</figcaption>
     <audio
         controls
         src="/assets/posters/Recording_salma Salah.mp4">
