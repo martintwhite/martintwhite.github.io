@@ -7,6 +7,7 @@ permalink: /publications/
 Below is a list of all of my scientific publications to date. If you are interested in any of these and want to find out more, please get in touch.
 
 <h3>Journal articles</h3>
+- Salah, S.I., Khader, M.A., **White, M.**, Sayma, A., 2020, "Mean-line design of a supercritical CO2 micro axial turbine", Applied Sciences, 10(15), 5069. [https://doi.org/10.3390/app10155069](https://doi.org/10.3390/app10155069)
 - **White, M.**, Sayma, A., 2020, "A new method to identify the optimal temperature of latent-heat thermal-energy storage systems for power generation from waste heat", International Journal of Heat and Mass Transfer, 149, 119111. [https://doi.org/10.1016/j.ijheatmasstransfer.2019.119111](https://doi.org/10.1016/j.ijheatmasstransfer.2019.119111)
 - **White, M.**, Sayma, A., 2019, "Simultaneous cycle optimization and fluid selection for ORC systems accounting for the effect of the operating conditions on turbine efficiency", Front Energy Res, 7, 50. [https://doi.org/10.3389/fenrg.2019.00050](https://doi.org/10.3389/fenrg.2019.00050)
 - **White, M.**, Oyewunmi, O., Chatzopoulou, M. et al., 2018, “Computer-aided working-fluid design and thermoeconomic optimisation of novel ORC systems for waste-heat recovery applications”, Energy, 161, 1181—1198. [https://doi.org/10.1016/j.energy.2018.07.098](https://doi.org/10.1016/j.energy.2018.07.098)
@@ -22,6 +23,7 @@ Below is a list of all of my scientific publications to date. If you are interes
 - **White, M.**, Sayma, A., 2015, “System and component modelling and optimisation for an efficient 10 kWe low-temperature organic Rankine cycle utilising a radial inflow expander”, P I Mech Eng A-J Pow,  229(7), 795—809. [https://doi.org/10.1177/0957650915574211](https://doi.org/10.1177/0957650915574211)
 
 <h3>Conference papers</h3>
+- **White, M.**, Sayma, A., 2020, "Fluid selection for small-scale Rankine cycle plants: Can you draw some lines in the sand?", IIR Rankine 2020 Conference - Advances in Cooling, Heating and Power Generation, 27-31st July, Glasgow, UK.
 - **White, M.**, Read, M., Sayma, A., 2019, "Comparison between single and cascaded organic Rankine cycle systems accounting for the effects of expansion volume ratio on expander performance", IOP Conf Ser: Mater Sci Eng, 604, 012086. [https://doi.org/10.1088/1757-899X/604/1/012086](https://doi.org/10.1088/1757-899X/604/1/012086)
 - **White, M.**, Read, M., Sayma, A., 2019, “A comparison between cascaded and single-stage ORC systems taken from the component perspective”, Proceedings of the 5th International Seminar on ORC Power Systems, September 9-11, 2019, Athens, Greece, ISBN: 978-90-9032038-0. [https://www.orc2019.com/online/proceedings/display_manuscript/113.htm](https://www.orc2019.com/online/proceedings/display_manuscript/113.htm)
 - **White, M.**, Read, M., Sayma, A., 2018, “Using a cubic equation of state to identify optimal working fluids for an ORC operating with two-phase expansion using a twin-screw expander”, 17th International Refrigeration and Air Conditioning Conference, 9-12th July, Purdue, US.
