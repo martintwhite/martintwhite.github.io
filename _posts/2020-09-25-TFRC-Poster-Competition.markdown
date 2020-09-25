@@ -16,6 +16,7 @@ After the poster competition, we had three rounds of an online quiz, which was g
 
 Overall, I had a lot of fun organising the event and it was great to see some of the great research coming out from our centre. I only hope the rest of the research centre enjoyed participating as much as I did organising it!
 
+
 **Round 1: Say what you see**
 
 Question 1 is (of course) Thermodynamics (‘Fur’, ‘Mo’, ‘Die’ (hard), (Viet) ‘nam’, ‘ics’), but can you get the rest?
@@ -25,6 +26,7 @@ Question 1 is (of course) Thermodynamics (‘Fur’, ‘Mo’, ‘Die’ (hard),
 </div>
 
 
+
 **Round 2: Name the scientist**
 
 <div style="text-align:center">
@@ -32,13 +34,14 @@ Question 1 is (of course) Thermodynamics (‘Fur’, ‘Mo’, ‘Die’ (hard),
 </div>
 
 
+
 **Round 3: Put these scientific discoveries in chronological order**
 
-Navier-Stokes equations
-First commercial steam engine
-Ideal gas law
-Definition of a reversible process
-Boyles law
-First use of computers to solve fluid dynamics problems
-Discovery of latent heat
-First use of the term ‘entropy’
+* Navier-Stokes equations
+* First commercial steam engine
+* Ideal gas law
+* Definition of a reversible process
+* Boyles law
+* First use of computers to solve fluid dynamics problems
+* Discovery of latent heat
+* First use of the term ‘entropy’
