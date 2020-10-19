@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Postdoc roles in supercritical carbon dioxide power cycles"
+date:   2020-10-19 08:00:00 +0000
+categories: research
+---
+As part of an exciting new EPSRC-funded research project, we are currently recruiting two postdocs for a fixed term of 36 months focussing on supercritical carbon dioxide power cycles. The project is focussed on investigating supercritical carbon dioxide power cycles for waste-heat recovery applications. Details of the roles and how to apply below!
+
+[Position 1: Turbomachinery](https://www.jobs.ac.uk/job/CCA495/postdoctoral-research-fellow-in-supercritical-co2-turbomachinery-scta-permanent-with-fixed-term-funding-for-36-months)
+
+The appointed Research Fellow will be responsible for the design and commissioning of a new blowdown test facility that will be used to characterise the behaviour CO<sub>2</sub> in close proximity to the critical point, including non-ideal fluid effects and condensation. They will also investigate the design and simulation of turbomachinery components for sCO<sub>2</sub> power cycles using a range of analytical and numerical methods including in-house design tools and computational-fluid dynamics.
+
+[Position 2: Cycle analysis](https://www.jobs.ac.uk/job/CCA345/postdoctoral-research-fellow-in-supercritical-co2-cycle-analysis-permanent-with-fixed-term-funding-for-36-months)
+
+The appointed Research Fellow will be responsible for the development of necessary tools to investigate the performance of supercritical CO<sub>2</sub> systems, and identify optimal system configuration, component designs, and operating conditions. They will also support in the design and commissioning of a new blowdown test facility that will be used to characterise the behaviour of CO<sub>2</sub> in close proximity to the critical point.
