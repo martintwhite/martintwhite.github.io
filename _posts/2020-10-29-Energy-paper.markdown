@@ -20,25 +20,35 @@ In the latest paper, optimal single-stage and cascaded cycles have been identifi
 This trade-off can be explored through optimisation and the generation of what is called a ‘Pareto front’. So, what’s a Pareto front?
 
 A Pareto front is essentially a collection of optimal solutions that considers the trade-off between two things. So, let’s say I asked you to design a system and I was interested in two things – performance and cost. Well, there are few different systems that you could come up with:
-* If you were to design a system that had the highest possible performance, it is logical to assume that that system is going to be very expensive
-* Likewise, if you were design a system that was cheap it would follow that that system would not perform very well
-* And, if you wanted a compromise, you would design a system that cost more and performed better than the cheap solution but wouldn’t cost as much or perform as well as the most expensive solution
-* And in between the two extremes there would be a whole range of solutions depending upon which of those your objectives you prioritised
+* if you were to design a system that had the highest possible performance, it is logical to assume that that system is going to be very expensive
+* likewise, if you were design a system that was cheap it would follow that that system would not perform very well
+* and, if you wanted a compromise, you would design a system that cost more and performed better than the cheap solution but wouldn’t cost as much or perform as well as the most expensive solution
+* and in between the two extremes there would be a whole range of solutions depending upon which of those your objectives you prioritised
 
 If you were to express that graphically, it would look something like the picture to the bottom right, with the cheap solution (circle), expensive solution (triangle) and trade-off solutions (stars) making up the Pareto front (solid line).
+
+<p></p>
+<div style="text-align:center">
+	<img src="{{site.baseurl}}/assets/Pareto_front.png" alt="Pareto" style="width:350px;" />
+</div>
+<p></p>
 
 So, what do the Pareto fronts from this latest study tell us? Well, take a look for yourself.
 
 <p></p>
 <div style="text-align:center">
-	<img src="{{site.baseurl}}/assets/Pareto_front.png" alt="Pareto" style="width:400px;" />
-	<img src="{{site.baseurl}}/assets/Energy2020_pareto.png" alt="Egy_pareto" style="width:400px;" />
+	<img src="{{site.baseurl}}/assets/Pareto_front.png" alt="Pareto" style="width:500px;" />
 </div>
 <p></p>
 
-In this figure, the red and black markers correspond to the Pareto fronts generated for the two different systems, and these tell us a few interesting points. Firstly, if I could afford quite large heat exchangers (in this specific case, greater than around 200 m2), then for that amount of area I could generate more power with a cascaded system than a single-stage system. On the other hand, if the size of the heat exchangers was restricted, you would probably be better off with a single-stage system.
+In this figure, the red and black markers correspond to the Pareto fronts generated for the two different systems, and these tell us a few interesting points. Firstly, if I could afford quite large heat exchangers (in this specific case, greater than around 200 m<sup>2</sup>), then for that amount of area I could generate more power with a cascaded system than a single-stage system. On the other hand, if the size of the heat exchangers was restricted, you would probably be better off with a single-stage system.
 
 So there you have it, these results suggest that in applications where maximising performance is not the primary objective, single-stage ORC systems remain the best option. However, in applications where you want to maximise performance cascaded systems can produce more power for the same size heat exchangers.
 
 
-### Acknowledgement 
+### Acknowledgement
+This work was completed as part of the [NextORC project](www.city.ac.uk/nextorc), which is funded by the UK Engineering and Physical Sciences Research Council (EPSRC) [grant number: [EP/P009131/1](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/P009131/1)].
+
+[You can read the full paper for free here.](https://doi.org/10.1016/j.energy.2020.118912)
+
+White, M., Read, M., Sayma, A., 2020, “Making the case for cascaded organic Rankine cycles for waste-heat recovery, Energy, 211, 118912. [doi: 10.1016/j.energy.2020.118912](https://doi.org/10.1016/j.energy.2020.118912)
