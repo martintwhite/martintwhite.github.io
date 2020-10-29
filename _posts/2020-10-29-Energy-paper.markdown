@@ -52,4 +52,4 @@ This work was completed as part of the [NextORC project](https://researchcentres
 
 Citation details:
 
-White, M., Read, M., Sayma, A., 2020, “Making the case for cascaded organic Rankine cycles for waste-heat recovery, Energy, 211, 118912. [doi: 10.1016/j.energy.2020.118912](https://doi.org/10.1016/j.energy.2020.118912)
+White, M., Read, M., Sayma, A., 2020, “Making the case for cascaded organic Rankine cycles for waste-heat recovery", Energy, 211, 118912. [doi: 10.1016/j.energy.2020.118912](https://doi.org/10.1016/j.energy.2020.118912)
