@@ -25,7 +25,7 @@ A Pareto front is essentially a collection of optimal solutions that considers t
 * and, if you wanted a compromise, you would design a system that cost more and performed better than the cheap solution but wouldn’t cost as much or perform as well as the most expensive solution
 * and in between the two extremes there would be a whole range of solutions depending upon which of those your objectives you prioritised
 
-If you were to express that graphically, it would look something like the picture to the bottom right, with the cheap solution (circle), expensive solution (triangle) and trade-off solutions (stars) making up the Pareto front (solid line).
+If you were to express that graphically, it would look something like the picture below, with the cheap solution (circle), expensive solution (triangle) and trade-off solutions (stars) making up the Pareto front (solid line).
 
 <p></p>
 <div style="text-align:center">
@@ -45,10 +45,10 @@ In this figure, the red and black markers correspond to the Pareto fronts genera
 
 So there you have it, these results suggest that in applications where maximising performance is not the primary objective, single-stage ORC systems remain the best option. However, in applications where you want to maximise performance cascaded systems can produce more power for the same size heat exchangers.
 
-
 ### Acknowledgement
-This work was completed as part of the [NextORC project](www.city.ac.uk/nextorc), which is funded by the UK Engineering and Physical Sciences Research Council (EPSRC) [grant number: [EP/P009131/1](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/P009131/1)].
+This work was completed as part of the [NextORC project](https://researchcentres.city.ac.uk/thermo-fluids/nextorc), which is funded by the UK Engineering and Physical Sciences Research Council (EPSRC) [grant number: [EP/P009131/1](https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/P009131/1)].
 
 [You can read the full paper for free here.](https://doi.org/10.1016/j.energy.2020.118912)
 
+Citation details:
 White, M., Read, M., Sayma, A., 2020, “Making the case for cascaded organic Rankine cycles for waste-heat recovery, Energy, 211, 118912. [doi: 10.1016/j.energy.2020.118912](https://doi.org/10.1016/j.energy.2020.118912)
