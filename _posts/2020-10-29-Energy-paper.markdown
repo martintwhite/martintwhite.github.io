@@ -37,7 +37,7 @@ So, what do the Pareto fronts from this latest study tell us? Well, take a look 
 
 <p></p>
 <div style="text-align:center">
-	<img src="{{site.baseurl}}/assets/Pareto_front.png" alt="Pareto" style="width:500px;" />
+	<img src="{{site.baseurl}}/assets/Energy2020_pareto" alt="Egy_Pareto" style="width:500px;" />
 </div>
 <p></p>
 
