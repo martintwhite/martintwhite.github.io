@@ -21,7 +21,7 @@ This trade-off can be explored through optimisation and the generation of what i
 
 A Pareto front is essentially a collection of optimal solutions that considers the trade-off between two things. So, let’s say I asked you to design a system and I was interested in two things – performance and cost. Well, there are few different systems that you could come up with:
 * if you were to design a system that had the highest possible performance, it is logical to assume that that system is going to be very expensive
-* likewise, if you were design a system that was cheap it would follow that that system would not perform very well
+* likewise, if you were to design a system that was cheap it would follow that that system would not perform very well
 * and, if you wanted a compromise, you would design a system that cost more and performed better than the cheap solution but wouldn’t cost as much or perform as well as the most expensive solution
 * and in between the two extremes there would be a whole range of solutions depending upon which of those your objectives you prioritised
 
