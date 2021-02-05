@@ -5,13 +5,13 @@ date:   2021-02-04 17:00:00 +0000
 categories: research
 image: /assets/water_boiling.png
 ---
-The end of 2020 brought with it a new publication - [a review paper discussing the current state-of-the-art in supercritical carbon dioxide (CO<sub>2</sub>) technologies for power generation](https://doi.org/10.1016/j.applthermaleng.2020.116447). But to the uninitiated, what is a supercritical CO<sub>2</sub> power system? Let?s see if we can cover some basics.
+The end of 2020 brought with it a new publication - [a review paper discussing the current state-of-the-art in supercritical carbon dioxide (CO<sub>2</sub>) technologies for power generation](https://doi.org/10.1016/j.applthermaleng.2020.116447). But to the uninitiated, what is a supercritical CO<sub>2</sub> power system? Let's see if we can cover some basics.
 
 Within the ORC-101 section, we have already introduced the topic of a [thermal power system]({{site.baseurl}}{% link _orc101/post1_thermodynamic-cycle.markdown %}) and a [working fluid]({{site.baseurl}}{% link _orc101/post2_fluids.markdown %}). We have also discussed that common power systems operate with air or water, or possibly an organic fluid, as their working fluid. So, with that in mind, the first thing that we can note is that a supercritical CO<sub>2</sub> power system is simply a thermal power system that operates with CO<sub>2</sub> as its working fluid.
 
 But what does the term *supercritical* mean? Well, that is a little bit harder to explain.
 
-The textbook definition of a supercritical fluid is a fluid that is at a temperature and pressure that is greater than the temperature and pressure at its critical point, at which point there is no distinction between liquid and vapour phases ? but what does that actually mean?
+The textbook definition of a supercritical fluid is a fluid that is at a temperature and pressure that is greater than the temperature and pressure at its critical point, at which point there is no distinction between liquid and vapour phases - but what does that actually mean?
 
 Let?s start by considering water. We know that under atmospheric pressure water boils at 100 degrees Celsius. Moreover, boiling is the process in which water transitions from being in a liquid state (water) to a vapour state (steam), and to obtain that transition a certain amount of energy needs to be added in order to break the bonds that hold the water molecules together and turn it into a steam.
 
@@ -32,10 +32,10 @@ For water, that occurs at 374 degrees Celsius and a pressure or 221 bar (or 218 
 
 For CO<sub>2</sub>, that occurs at a temperature 31 degrees Celsius and a pressure of 74 bar (or 73 times atmospheric pressure).
 
-So, in simple terms, a supercritical CO<sub>2</sub> power system is particular type of thermal power system operating with CO<sub>2</sub>  as its working fluid, and within the cycle the CO<sub>2</sub> is maintained at a temperature above 31 ∞C and a pressure above 74 bar.
+So, in simple terms, a supercritical CO<sub>2</sub> power system is particular type of thermal power system operating with CO<sub>2</sub>  as its working fluid, and within the cycle the CO<sub>2</sub> is maintained at a temperature above 31 degrees Celsius and a pressure above 74 bar.
 
 Besides that, the operation of the system, at least in principle, is the same as any other system with the working fluid undergoing compression, heat addition, expansion and heat rejection in order to generate power from an available heat source.
 
 OK, great. But why is that interesting?
 
-Well, that is a great question. Perhaps you might just want to read the review paper to find out?
+Well, that is a great question. Perhaps you might just want to read the review paper to find out...
