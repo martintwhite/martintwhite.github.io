@@ -5,4 +5,14 @@ date:   2021-02-04 17:00:00 +0000
 categories: research
 image: /assets/water_boiling.png
 ---
-What...
+The end of 2020 brought with it a new publication ? [a review paper discussing the current state-of-the-art in supercritical carbon dioxide (CO<sub>2</sub>) technologies for power generation](https://doi.org/10.1016/j.applthermaleng.2020.116447). But to the uninitiated, what is a supercritical CO<sub>2</sub> power system? Let?s see if we can cover some basics.
+
+Within the ORC-101 section, we have already introduced the topic of a [thermal power system]({{site.baseurl}}{% link _orc101/post1_thermodynamic-cycle.markdown %}) and a [working fluid]({{site.baseurl}}{% link _orc101/post2_fluids.markdown %}). We have also discussed that common power systems operate with air or water, or possibly an organic fluid, as their working fluid. So, with that in mind, the first thing that we can note is that a supercritical CO<sub>2</sub> power system is simply a thermal power system that operates with CO<sub>2</sub> as its working fluid.
+
+But what does the term *supercritical* mean? Well, that is a little bit harder to explain.
+
+The textbook definition of a supercritical fluid is a fluid that is at a temperature and pressure that is greater than the temperature and pressure at its critical point, at which point there is no distinction between liquid and vapour phases ? but what does that actually mean?
+
+Let?s start by considering water. We know that under atmospheric pressure water boils at 100 degrees Celsius. Moreover, boiling is the process in which water transitions from being in a liquid state (water) to a vapour state (steam), and to obtain that transition a certain amount of energy needs to be added in order to break the bonds that hold the water molecules together and turn it into a steam.
+
+Well, if you were to now put that water in a closed vessel and subject it to a pressure that is double atmospheric pressure, the boiling temperature would increase to around 120 degrees Celsius. And if I was to increase the pressure to 50 times atmospheric pressure, the boiling temperature would increase to around 265 degrees Celsius. But more importantly, as I increase the pressure, the amount of energy required to transition from liquid to vapour reduces.
