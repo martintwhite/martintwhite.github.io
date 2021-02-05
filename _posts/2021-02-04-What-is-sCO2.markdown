@@ -38,7 +38,7 @@ Well, that is a great question. Perhaps you might just want to read the review p
 	<img src="{{site.baseurl}}/assets/water_boiling.png" alt="water_boiling" style="width:600px;" />
 </div>
 <p></p>
-*Heating of water at different pressures, with each coloured line representing a different pressure. At a pressure of 1 atmosphere (red line) water is first heated from 0 degrees Celsius up to 100 degrees Celsius. A certain amount of enthalpy (essentially energy) is required to transition into vapour as shown by the horizontal red line, after which heating of the vapour continues. At a pressure of 50 atmosphere, the amount of energy required to boil the water is reduced, and at 275 atmosphere the pressure is higher than the critical point and there is distinction between liquid and vapour phases.*
+*Heating of water at different pressures, with each coloured line representing a different pressure. At a pressure of 1 atmosphere (red line) water is first heated from 0 degrees Celsius up to 100 degrees Celsius. A certain amount of enthalpy (essentially energy) is required to transition into vapour as shown by the horizontal red line, after which heating of the vapour continues. At a pressure of 50 atmosphere, the amount of energy required to boil the water is reduced, and at 275 atmosphere the pressure is higher than the critical point and there is no distinction between liquid and vapour phases.*
 
 **Review of supercritical CO<sub>2</sub> technologies and systems for power generation**
 
