@@ -23,3 +23,19 @@ Well, if you were to now put that water in a closed vessel and subject it to a p
 </div>
 <p></p>
 *Heating of water at different pressures, with each coloured line representing a different pressure. At a pressure of 1 atmosphere (red line) water is first heated from 0 degrees Celsius up to 100 degrees Celsius. A certain amount of enthalpy (essentially energy) is required to transition into vapour as shown by the horizontal red line, after which heating of the vapour continues. At a pressure of 50 atmosphere, the amount of energy required to boil the water is reduced, and at 275 atmosphere the pressure is higher than the critical point and there is distinction between liquid and vapour phases.*
+
+And if you were to continue increasing the pressure the amount of energy required to obtain that transition reduces and reduces until you reach a point at which no energy is required at all.
+
+At that point there is no longer a discernible difference between the liquid and vapour phases and the fluid is referred to as a *supercritical fluid*. The point at which that occurs is referred to as the critical point, and for every fluid that is defined by a specific temperature and pressure. 
+
+For water, that occurs at 374 degrees Celsius and a pressure or 221 bar (or 218 times atmospheric pressure). 
+
+For CO<sub>2</sub>, that occurs at a temperature 31 degrees Celsius and a pressure of 74 bar (or 73 times atmospheric pressure).
+
+So, in simple terms, a supercritical CO<sub>2</sub> power system is particular type of thermal power system operating with CO<sub>2</sub>  as its working fluid, and within the cycle the CO<sub>2</sub> is maintained at a temperature above 31 ∞C and a pressure above 74 bar.
+
+Besides that, the operation of the system, at least in principle, is the same as any other system with the working fluid undergoing compression, heat addition, expansion and heat rejection in order to generate power from an available heat source.
+
+OK, great. But why is that interesting?
+
+Well, that is a great question. Perhaps you might just want to read the review paper to find out?
