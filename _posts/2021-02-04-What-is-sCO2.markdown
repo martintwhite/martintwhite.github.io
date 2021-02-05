@@ -3,6 +3,6 @@ layout: post
 title:  "What is a supercritical carbon dioxide power system?"
 date:   2021-02-04 17:00:00 +0000
 categories: research
-image: /assets/PO_photo.jpg
+image: /assets/water_boiling.png
 ---
 What...
