@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "An introduction to CO<sub>2</sub> blends as working fluids"
+date:   2021-03-18 17:00:00 +0000
+categories: research
+image: /assets/CO2-blends.png
+---
+In my last post I introduced the topic of [supercritical carbon power dioxide power cycles]({{site.baseurl}}{% link _posts/2021-02-04-What-is-sCO2.markdown%}). Taking that a step further, this month, as part of the European research project [SCARABEUS](https://www.scarabeusproject.eu/), our team at City have published a [new paper](https://doi.org/10.1016/j.applthermaleng.2021.116796) that explores the consequences of CO<sub>2</sub>-blends on cycle and turbine design. So, what are CO<sub>2</sub>- blends? And why are they interesting?
+
+Let’s start with the answering the first, and slightly easier, question.
+
+A fluid blend is simply a mixture of two (or possibly more) fluids that are combined together to form a new working fluid. So, a CO<sub>2</sub>-blend is quite simply a mixture of CO<sub>2</sub> combined with another fluid. For the sake of convenience lets define that as an arbitrary fluid called *Fluid A*.
+
+Now, let’s move onto starting to address the second, and slightly tricker, question.
+
+In my [previous post]({{site.baseurl}}{% link _posts/2021-02-04-What-is-sCO2.markdown%}) I introduced the topic of subcritical and supercritical conditions and also talked about the critical point. As a reminder, this is the point that distinguishes between subcritical and supercritical conditions, and for every fluid this is defined by a specific temperature and pressure.
+
+So, if we consider our CO<sub>2</sub>-blend, which is composed of CO<sub>2</sub> mixed with Fluid A, we can say that we have a mixture of two fluids, each with their own critical point. However, since the two fluids are combined, we now have a CO<sub>2</sub>-blend that has its own critical point.
+
+The precise critical point of the CO<sub>2</sub>-blend will depend on how much Fluid A is added to CO<sub>2</sub>. For example, if we have a mixture that is composed of 95% CO<sub>2</sub> and 5% Fluid A it is relatively easy to rationalise that the behaviour of the blend will be similar to pure CO<sub>2</sub>. Likewise, if the mixture was composed of 10% CO<sub>2</sub> and 90% Fluid A we can rationalise that the behaviour of the mixture will be similar to pure Fluid A. And at 50/50% it might be somewhere in the middle.
+
+This behaviour can be captured by considering the figure below which corresponds to a CO<sub>2</sub>-blend composed of CO<sub>2</sub> and titanium tetrachloride (TiCl<sub>4</sub>).
+
+
+<p></p>
+<div style="text-align:center">
+	<img src="{{site.baseurl}}/assets/CO2-blends.png" alt="CO2_blends" style="width:600px;" />
+</div>
+<p></p>
+*For a particular fluid we can evaluate the location of the critical point (circle markers) by considering the saturation dome of the fluid (black, red and blue lines). If we consider a mixture of CO<sub>2</sub> and TiCl<sub>4</sub> we can see that as we reduce the amount of CO<sub>2</sub> within the CO<sub>2</sub>-blend we can shift the saturation dome (and critical point) away that of pure CO<sub>2</sub> and towards that of pure TiCl<sub>4</sub>.*
+
+
+So, why are they interesting?
+
+In simple terms, the use of a CO<sub>2</sub>-blend, instead of pure CO<sub>2</sub>, introduces the ability to tailor the working fluid to the application and to potentially improve the thermodynamic performance of the cycle.
+
+In the context of this work and the SCARABEUS project, their use could allow efficiency improvements in concentrated-solar power plants. This is achieved by raising the critical temperature of the fluid above the minimum cycle temperature and allowing condensation within the cycle.
+
+Interested in understanding a bit more about the implications of using CO<sub>2</sub>-blends on cycle design, and also on the design of the turbine for these systems? Then I encourage you to check out our new paper below.
+
+**Sensitivity of transcritical cycle and turbine design to dopant fraction in CO<sub>2</sub>-based working fluids**
+
+[You can check out the full paper here.](https://doi.org/10.1016/j.applthermaleng.2021.116796)
+
+Abstract
+
+*Supercritical CO<sub>2</sub> (sCO<sub>2</sub>) power cycles have gained prominence for their expected excellent performance and compactness. Among their benefits, they may potentially reduce the cost of Concentrated Solar Power (CSP) plants. Because the critical temperature of CO<sub>2</sub> is close to ambient temperatures in areas with good solar irradiation, dry cooling may penalise the efficiency of sCO<sub>2</sub> power cycles in CSP plants. Recent research has investigated doping CO<sub>2</sub> with different materials to increase its critical temperature, enhance its thermodynamic cycle performance, and adapt it to dry cooling in arid climates.*
+
+*This paper investigates the use of CO<sub>2</sub> /TiCl<sub>4</sub>, CO<sub>2</sub> /NOD (an unnamed Non-Organic Dopant), and CO<sub>2</sub> /C<sub>6</sub> F<sub>6</sub> mixtures as working fluids in a transcritical Rankine cycle implemented in a 100 MWe power plant. Specific focus is given to the effect of dopant type and fraction on optimal cycle operating conditions and on key parameters that influence the expansion process. Thermodynamic modelling of a simple recuperated cycle is employed to identify the optimal turbine pressure ratio and recuperator effectiveness that achieve the highest cycle efficiency for each assumed dopant molar fraction. A turbine design model is then used to define the turbine geometry based on optimal cycle conditions.*
+
+*It was found that doping CO<sub>2</sub> with any of the three dopants (TiCl<sub>4</sub>, NOD, or C<sub>6</sub> F<sub>6</sub>) increases the cycle’s thermal efficiency. The greatest increase in efficiency is achieved with TiCl<sub>4</sub> (up to 49.5%). The specific work, on the other hand, decreases with TiCl<sub>4</sub> and C<sub>6</sub> F<sub>6</sub>, but increases with NOD. Moreover, unlike the other two dopants, NOD does not alleviate recuperator irreversibility. In terms of turbine design sensitivity, the addition of any of the three dopants increases the pressure ratio, temperature ratio, and expansion ratios across the turbine. The fluid’s density at turbine inlet increases with all dopants as well. Conversely, the speed of sound at turbine inlet decreases with all dopants, yet higher Mach numbers are expected in CO<sub>2</sub> /C<sub>6</sub> F<sub>6</sub> turbines.*
+
+### Acknowledgement
+
+This work has been conducted as part of the [SCARABEUS project](https://www.scarabeusproject.eu/). The SCARABEUS project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 814985.
