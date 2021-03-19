@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "An introduction to CO<sub>2</sub> blends as working fluids"
+title:  "An introduction to carbon dioxide blends as working fluids"
 date:   2021-03-18 17:00:00 +0000
 categories: research
 image: /assets/CO2-blends.png
 ---
-In my last post I introduced the topic of [supercritical carbon power dioxide power cycles]({{site.baseurl}}{% link _posts/2021-02-04-What-is-sCO2.markdown%}). Taking that a step further, this month, as part of the European research project [SCARABEUS](https://www.scarabeusproject.eu/), our team at City have published a [new paper](https://doi.org/10.1016/j.applthermaleng.2021.116796) that explores the consequences of CO<sub>2</sub>-blends on cycle and turbine design. So, what are CO<sub>2</sub>- blends? And why are they interesting?
+In my last post I introduced the topic of [supercritical carbon power dioxide power cycles]({{site.baseurl}}{% link _posts/2021-02-04-What-is-sCO2.markdown%}). Taking that a step further, this month, as part of the European research project [SCARABEUS](https://www.scarabeusproject.eu/), our team at City have published a [new paper](https://doi.org/10.1016/j.applthermaleng.2021.116796) that explores the consequences of CO<sub>2</sub>-blends on cycle and turbine design. So, what are CO<sub>2</sub>-blends? And why are they interesting?
 
 Let’s start with the answering the first, and slightly easier, question.
 
@@ -17,7 +17,7 @@ In my [previous post]({{site.baseurl}}{% link _posts/2021-02-04-What-is-sCO2.mar
 
 So, if we consider our CO<sub>2</sub>-blend, which is composed of CO<sub>2</sub> mixed with Fluid A, we can say that we have a mixture of two fluids, each with their own critical point. However, since the two fluids are combined, we now have a CO<sub>2</sub>-blend that has its own critical point.
 
-The precise critical point of the CO<sub>2</sub>-blend will depend on how much Fluid A is added to CO<sub>2</sub>. For example, if we have a mixture that is composed of 95% CO<sub>2</sub> and 5% Fluid A it is relatively easy to rationalise that the behaviour of the blend will be similar to pure CO<sub>2</sub>. Likewise, if the mixture was composed of 10% CO<sub>2</sub> and 90% Fluid A we can rationalise that the behaviour of the mixture will be similar to pure Fluid A. And at 50/50% it might be somewhere in the middle.
+The precise critical point of the CO<sub>2</sub>-blend will depend on how much Fluid A is added to CO<sub>2</sub>. For example, if we have a mixture that is composed of 95% CO<sub>2</sub> and 5% Fluid A it is relatively easy to rationalise that the behaviour of the blend will be similar to pure CO<sub>2</sub>. Likewise, if the mixture was composed of 10% CO<sub>2</sub> and 90% Fluid A we can rationalise that the behaviour of the mixture will be similar to pure Fluid A. And at 50%/50% it might be somewhere in the middle.
 
 This behaviour can be captured by considering the figure below which corresponds to a CO<sub>2</sub>-blend composed of CO<sub>2</sub> and titanium tetrachloride (TiCl<sub>4</sub>).
 
@@ -37,6 +37,8 @@ In simple terms, the use of a CO<sub>2</sub>-blend, instead of pure CO<sub>2</su
 In the context of this work and the SCARABEUS project, their use could allow efficiency improvements in concentrated-solar power plants. This is achieved by raising the critical temperature of the fluid above the minimum cycle temperature and allowing condensation within the cycle.
 
 Interested in understanding a bit more about the implications of using CO<sub>2</sub>-blends on cycle design, and also on the design of the turbine for these systems? Then I encourage you to check out our new paper below.
+
+### Paper details
 
 **Sensitivity of transcritical cycle and turbine design to dopant fraction in CO<sub>2</sub>-based working fluids**
 

@@ -7,6 +7,7 @@ permalink: /publications/
 Below is a list of all of my scientific publications to date. If you are interested in any of these and want to find out more, please get in touch.
 
 <h3>Journal articles</h3>
+- Aqel, O., **White, M.**, Khader, M., Sayma, A., 2021, "Sensitivity of transcritical cycle and turbine design to dopant fraction in CO<sub>2</sub>-based working fluids", Applied Thermal Engineering, 190, 116796. doi:[https://doi.org/10.1016/j.applthermaleng.2021.116796](https://doi.org/10.1016/j.applthermaleng.2021.116796)
 - **White, M.**, Bianchi, G., Chai, L., Tassou, S., Sayma, A., 2021, "Review of supercritical CO<sub>2</sub> technologies and systems for power generation", Applied Thermal Engineering, 185, 116447. doi: [https://doi.org/10.1016/j.applthermaleng.2020.116447](https://doi.org/10.1016/j.applthermaleng.2020.116447)
 - **White, M.**, Read, M., Sayma, A., 2020, "Making the case for cascaded organic Rankine cycles for waste-heat recovery", Energy, 211, 118912. doi: [https://doi.org/10.1016/j.energy.2020.118912](https://doi.org/10.1016/j.energy.2020.118912)
 - Salah, S.I., Khader, M.A., **White, M.**, Sayma, A., 2020, "Mean-line design of a supercritical CO2 micro axial turbine", Applied Sciences, 10(15), 5069. [https://doi.org/10.3390/app10155069](https://doi.org/10.3390/app10155069)
