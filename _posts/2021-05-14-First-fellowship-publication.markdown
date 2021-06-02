@@ -24,7 +24,6 @@ In addition to that, a preliminary turbine design study has indicated feasible t
 	<img src="{{site.baseurl}}/assets/ATE2021-Two-Phase.png" alt="ATE2021" style="width:600px;" />
 </div>
 <p></p>
-*Performance gain obtained by the two-phase ORC systems compared to single-phase ORC systems.*
 
 ### Paper details
 
@@ -32,7 +31,7 @@ In addition to that, a preliminary turbine design study has indicated feasible t
 
 [You can check out the full paper here.](https://doi.org/10.1016/j.applthermaleng.2021.116852)
 
-Abstract
+### Abstract
 
 *Previous investigations suggest the power output from waste-heat recovery organic Rankine cycle (ORC) systems could be enhanced by up to 30% by operating with two-phase expansion, which could reduce cost and aid in the more widespread deployment of ORC technology. However, there are limited expander technologies suitable for such operation. The aim of this research is to investigate a novel ORC system that operates with wet-to-dry expansion permitting the use of a radial-inflow turbine. Specifically, through the exploitation of molecularly complex fluids the wet-to-dry expansion could be achieved across a single turbine stage, whilst the two-phase region is confined to the stator vane. Thermodynamic system optimisation is completed for potential fluids in which the degree of reaction is used to differentiate between the stator and rotor expansion processes. The results reveal that siloxanes are optimal fluids, and that for heat-source temperatures of 150, 200 and 250 degrees Celsius the two-phase systems could generate up to 28%, 14% and 3% more power than single-phase systems, respectively. Following this, existing mean-line turbine methods are extended to two-phase turbines under the assumption of a two-phase homogeneous fluid under thermal equilibrium, which is supported with numerical simulations of a two-phase stator vane. The mean-line turbine optimisation for the 200 degrees Celsius heat source is then conducted, with the optimal system corresponding to a turbine inlet vapour quality of 0.1 and degree of reaction of 0.4, with lower reaction leading to lower turbine efficiencies. More generally, feasible rotor geometries can be obtained, and conditions with the rotor are expected to remain subsonic. Whilst stator outlet Mach numbers range between 1.5 and 2.1, and stator throat widths below 1 mm are required, the CFD simulations indicate that wet-to-dry expansion can be successfully realised within the stator. In summary, these results provide the first positive demonstration that a 30% improvement in power output could be achieved with a two-phase ORC system operating with molecularly complex working fluids and a radial-inflow turbine.*
 
