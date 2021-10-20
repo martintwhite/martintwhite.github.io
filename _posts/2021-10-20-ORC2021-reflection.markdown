@@ -27,6 +27,6 @@ Keep an eye out for the next blog where I will aim to upload a little info the r
 
 <p></p>
 <div style="text-align:center">
-<img src="/assets/ORC2013-poster.png" width="100%" height="1000px">
+<img src="/assets/ORC2013-poster.png" width="80%">
 </div>
 <p></p>
