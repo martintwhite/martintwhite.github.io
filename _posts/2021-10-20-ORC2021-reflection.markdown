@@ -25,6 +25,6 @@ Keep an eye out for the next blog where I will aim to upload a little info the r
 
 <p></p>
 <div style="text-align:center">
-<embed src="/assets/ORC2013-poster.pdf" width="100%" height="1000px">
+<src="/assets/ORC2013-poster.png" width="100%" height="1000px">
 </div>
 <p></p>
