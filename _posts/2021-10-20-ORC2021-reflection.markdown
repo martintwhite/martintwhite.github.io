@@ -3,8 +3,9 @@ layout: post
 title:  "My academic journey from ORC2013 to ORC2021"
 date:   2021-10-20 00:00:00 +0000
 categories: research
+images: /assets/presentation_me.jpg
 ---
-Last week was a welcome return to the 6th International Seminar on ORC Power Systems (albeit online) which has provided some opportunity for a little reflection – and provided the topic for a long overdue blog post.
+Last week was a welcome return to the [6th International Seminar on ORC Power Systems](https://www.orc2021.com/) (albeit online) which has provided some opportunity for a little reflection – and provided the topic for a long overdue blog post.
 
 I would imagine a lot of people might say they have a ‘favourite’ conference. One where they find the most interesting papers. They know the most people. Perhaps it’s always held in a nice location. Or perhaps, as it is in my case, it was their first ever academic conference.
 
@@ -24,6 +25,6 @@ Keep an eye out for the next blog where I will aim to upload a little info the r
 
 <p></p>
 <div style="text-align:center">
-<embed src="/assets/posters/ORC2013-poster.pdf" width="100%" height="1000px">
+<embed src="/assets/ORC2013-poster.pdf" width="100%" height="1000px">
 </div>
 <p></p>
