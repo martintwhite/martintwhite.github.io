@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My academic journey from ORC2013 to ORC2021"
-date:   2021-10-20 00:00:00 +0000
+date:   2021-10-22 00:00:00 +0000
 categories: research
 images: /assets/presentation_me.jpg
 ---
@@ -21,7 +21,9 @@ I guess the journey from a PhD student to an "academic" is a natural part of the
 
 So, if you are still at the beginning of that journey and feel daunted by the prospect of what might be ahead of you, remember that those feelings are quite natural, and it is a journey that most of us go on, and come out the other side all the stronger for it.
 
-Keep an eye out for the next blog where I will aim to upload a little info the research that was presented this year at ORC2021. For now, for old time sake, here is the poster that was presented back in 2013!
+Keep an eye out for the next blog where I will aim to upload a little info on the research that was presented this year at ORC2021. 
+
+For now, for old time sake, here is the poster that was presented back in 2013!
 
 
 
