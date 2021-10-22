@@ -3,7 +3,7 @@ layout: post
 title:  "My academic journey from ORC2013 to ORC2021"
 date:   2021-10-22 00:00:00 +0000
 categories: research
-images: /assets/presentation_me.jpg
+image: /assets/presentation_me.jpg
 ---
 Last week was a welcome return to the [6th International Seminar on ORC Power Systems](https://www.orc2021.com/) (albeit online) which has provided some opportunity for a little reflection – and provided the topic for a long overdue blog post.
 
