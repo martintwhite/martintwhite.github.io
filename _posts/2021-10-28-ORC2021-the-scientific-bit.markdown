@@ -14,10 +14,11 @@ Well, the work presented at ORC2021 was an initial step towards trying to answer
 You can watch the recorded presentation below.
 
 **Spolier alert**
+
 The results indicate that the existing stator *may* be able to accommodate up to a 35% to 65% mixture of liquid to vapour without its performance being significantly affected which is a positive result. However, I say *may* as these results are subject to simplistic assumptions that require further investigation.
 
 <p></p>
 <div style="text-align:center">
-	<iframe width="560" height="315" src="/assets/ORC2021_presentation.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="750" height="420" src="/assets/ORC2021_presentation.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p></p>
