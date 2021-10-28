@@ -5,7 +5,7 @@ date:   2021-10-28 00:00:00 +0000
 ---
 In the [first part]({{site.baseurl}}{% link _posts/2021-10-20-ORC2021-reflection.markdown %}) of this two-part blog post I used the ORC2021 conference to reflect on my academic journey so far. In this second part, lets dig into what the presented research was all about - simulating an existing supersonic stator vane under two-phase inlet conditions. There is even the chance to watch the recorded presentation!
 
-So, within my RAEng Research Fellowship I am exploring turbomachinery designs that could potentially facilitate an improvement in waste-heat recovery applications by allowing two-phase expansion. Earlier in the year I reported on the [first paper](({{site.baseurl}}{% link _posts/2021-05-14-First-fellowship-publication.markdown %})) from my fellowship which explored the design of such components and reported some promising preliminary results.
+So, within my RAEng Research Fellowship I am exploring turbomachinery designs that could potentially facilitate an improvement in waste-heat recovery applications by allowing two-phase expansion. Earlier in the year I reported on the [first paper]({{site.baseurl}}{% link _posts/2021-05-14-First-fellowship-publication.markdown %}) from my fellowship which explored the design of such components and reported some promising preliminary results.
 
 This previous research worked on the premise of designing a new turbine design to achieve this two-phase expansion process. But an interesting question arises, which is *"Could I use an existing stator design, originally intended for single-phase (vapour) expansion, for these two-phase conditions?"*
 
