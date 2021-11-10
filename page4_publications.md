@@ -27,6 +27,9 @@ Below is a list of all of my scientific publications to date. If you are interes
 - **White, M.**, Sayma, A., 2015, “System and component modelling and optimisation for an efficient 10 kWe low-temperature organic Rankine cycle utilising a radial inflow expander”, P I Mech Eng A-J Pow,  229(7), 795—809. [https://doi.org/10.1177/0957650915574211](https://doi.org/10.1177/0957650915574211)
 
 <h3>Conference papers</h3>
+- **White, M.**, Turunen-Saaresti, T., 2021, "Simulation of a supersonic stator vane under two-phase inlet conditions", 6th International Seminar on ORC Power Systems, 11-13th October, Munich, Germany.
+- Abdeldayem, A., **White, M.**, Sayma, A., 2021, "Comparison of CFD predictions of supercritical carbon dioxide axial flow turbines using a number of turbulence models", GT2021 ASME Turbo Expo, 7-11th June, Online.
+- Aqel, O., **White, M.**, Sayma, A., 2021, "Binary interaction uncertainty in the optimisation of a transcritical cycle: Consequences on cycle and turbine design", The 4th European sCO2 Conference for Energy Systems, 23-24th March, Online.
 - **White, M.**, 2020, "Investigating the validity of the fundamental derivative in the equilibrium and non-equilibrium two-phase expansion of MM", 3<sup>rd</sup> International Seminar on Non-Ideal Compressible Fluid Dynamics for Propulsion and Power, 29-30th October, Delft, Netherlands.
 - **White, M.**, Sayma, A., 2020, "Fluid selection for small-scale Rankine cycle plants: Can you draw some lines in the sand?", IIR Rankine 2020 Conference - Advances in Cooling, Heating and Power Generation, 27-31st July, Glasgow, UK. [https://iifiir.org/en/fridoc/142633](https://iifiir.org/en/fridoc/142633)
 - **White, M.**, Read, M., Sayma, A., 2019, "Comparison between single and cascaded organic Rankine cycle systems accounting for the effects of expansion volume ratio on expander performance", IOP Conf Ser: Mater Sci Eng, 604, 012086. [https://doi.org/10.1088/1757-899X/604/1/012086](https://doi.org/10.1088/1757-899X/604/1/012086)
@@ -40,4 +43,3 @@ Below is a list of all of my scientific publications to date. If you are interes
 - **White, M.**, Oyewunmi, O., Haslam, A., et al., 2017, “High-efficiency waste-heat recovery through computer-aided integrated working-fluid and ORC system optimisation”, SusTEM 2017, 28-30th June, Alkmaar, Netherlands.
 - **White, M.**, Sayma, A., 2016, “Investigating the effect of changing the working fluid on the three-dimensional flow within organic Rankine cycle turbines”, GT2016 ASME Turbo Expo, 13-17th June, Seoul, South Korea.
 - **White, M.**, Sayma, A., 2015, “The one-dimensional meanline design of radial turbines for small scale low temperature organic Rankine cycles”, GT2015 ASME Turbo Expo, 15-19th June, Montreal, Canada.
-
