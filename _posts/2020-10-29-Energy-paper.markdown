@@ -7,7 +7,7 @@ image: /assets/cascaded.png
 ---
 It is a little over a year ago that I presented at [ORC2019 and the Compressor Conference]({{site.baseurl}}{% link _posts/2019-09-13-ORC2019.markdown %}), and subsequently introduced you to the topic of a cascaded ORC system [on this blog]({{site.baseurl}}{% link _posts/2019-10-03-Cascaded-ORC.markdown %}). Fast forward a year, and my latest paper published in the Energy journal has further confirmed that cascaded ORC systems can outperform single-stage ORC systems.
 
-The topic of this latest paper once again focusses on using [organic Rankine cycle (ORC)]({{site.baseurl}}{% link page1_ORC_101.md %}) technology for the generation of power from waste heat, with a focus on cascaded systems. As a quick recap, a cascaded ORC system is essentially two ORC systems coupled together, with the heat that is rejected from the first ORC being used as the input heat for the second.
+The topic of this latest paper once again focusses on using [organic Rankine cycle (ORC)]({{site.baseurl}}{% link page4_ORC_101.md %}) technology for the generation of power from waste heat, with a focus on cascaded systems. As a quick recap, a cascaded ORC system is essentially two ORC systems coupled together, with the heat that is rejected from the first ORC being used as the input heat for the second.
 
 <p></p>
 <div style="text-align:center">

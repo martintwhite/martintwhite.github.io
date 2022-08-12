@@ -72,13 +72,12 @@ $base-font-size:   14px !default;
 }
 #twocol_container > div {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 #DivA {
     width: 49%;
 }
 #DivB {
-    vertical-align:middle;
     width: 49%;
 }
 

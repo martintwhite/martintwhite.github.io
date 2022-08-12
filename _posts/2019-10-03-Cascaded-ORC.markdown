@@ -11,7 +11,7 @@ In a busy month, the first big ticket items were two conference papers that were
 
 So, what is a cascaded organic Rankine cycle?
 
-Hopefully, from the [ORC-101 section]({{site.baseurl}}{% link page1_ORC_101.md %}), the concept of an ORC is somewhat familiar, where we can use a heat source to drive the thermal power cycle to generate power, and then reject heat to a heat sink. Well, a cascaded ORC system is essentially two ORC systems coupled together, with the heat that is rejected from the first ORC being used as the input heat for the second.
+Hopefully, from the [ORC-101 section]({{site.baseurl}}{% link page4_ORC_101.md %}), the concept of an ORC is somewhat familiar, where we can use a heat source to drive the thermal power cycle to generate power, and then reject heat to a heat sink. Well, a cascaded ORC system is essentially two ORC systems coupled together, with the heat that is rejected from the first ORC being used as the input heat for the second.
 
 <p></p>
 <div style="text-align:center">

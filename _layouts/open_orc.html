@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pocketORC</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <style>
+        label {
+            display: inline-block;
+            width: 325px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+    
+<body style="background-color:#cce0ff; margin:5px; padding:5px">
+
+    <py-env>
+        - matplotlib
+        - numpy
+        - paths:
+            - ./thermo_props.py
+            - ./orc_simulator.py
+    </py-env>
+
+    <h4 class="font-semibold">Working fluid:</h4>
+    <select name="working-fluid" id="working-fluid-select">
+        <option value="n-butane">n-butane</option>
+        <option value="n-pentane">n-pentane</option>
+        <option value="R1233zdE">R1233zd(E)</option>
+    </select>
+    <p>&nbsp</p>
+    <h4 class="font-semibold">Heat-source conditions:</h4>
+    <div class="form-group">
+        <label for="heat-source-temperature" width="500px">Heat-source temperature [K]:</label>
+        <input name="heat-source-temperature" id="heat-source-temperature" />
+    </div>
+    <div class="form-group">
+        <label for="heat-source-mass-flow">Heat-source mass-flow rate [kg/s]:</label>
+        <input name="heat-source-mass-flow" id="heat-source-mass-flow" />
+    </div>
+    <div class="form-group">
+        <label for="heat-source-heat-capacity">Heat-source specific-heat capacity [J/(kg K)]:</label>
+        <input name="heat-source-heat-capacity" id="heat-source-heat-capacity" />
+    </div>
+    <p>&nbsp</p>
+    <h4 class="font-semibold">Heat-sink conditions:</h4>
+    <div class="form-group">
+        <label for="heat-sink-temperature">Heat-sink temperature [K]:</label>
+        <input name="heat-sink-temperature" id="heat-sink-temperature" />
+    </div>
+    <div class="form-group">
+        <label for="heat-sink-mass-flow">Heat-sink mass-flow rate [kg/s]:</label>
+        <input name="heat-sink-mass-flow" id="heat-sink-mass-flow" />
+    </div>
+    <div class="form-group">
+        <label for="heat-sink-heat-capacity">Heat-sink specific-heat capacity [J/(kg K)]:</label>
+        <input name="heat-sink-heat-capacity" id="heat-sink-heat-capacity" />
+    </div>
+    <p>&nbsp</p>
+    <h4 class="font-semibold">Component efficiencies:</h4>
+    <div class="form-group">
+        <label for="pump-efficiency">Pump isentropic efficiency [%]:</label>
+        <input name="pump-efficiency" id="pump-efficiency" />
+    </div>
+    <div class="form-group">
+        <label for="turbine-efficiency">Turbine isentropic efficiency [%]:</label>
+        <input name="turbine-efficiency" id="turbine-efficiency" />
+    </div>
+    <p>&nbsp</p>
+    <h4 class="font-semibold">Cycle variables:</h4>
+    <div class="form-group">
+        <label for="condensation-temperature">Condensation temperature [K]:</label>
+        <input name="condensation-temperature" id="condensation-temperature" />
+    </div>
+    <div class="form-group">
+        <label for="pump-subcooling">Subcooling at pump inlet [K]:</label>
+        <input name="pump-subcooling" id="pump-subcooling" />
+    </div>         
+    <div class="form-group">
+        <label for="pressure-ratio">Pressure ratio [-]:</label>
+        <input name="pressure-ratio" id="pressure-ratio" />
+    </div>
+    <div class="form-group">
+        <label for="expander-inlet">Expander inlet parameter [-]:</label>
+        <input name="expander-inlet" id="expander-inlet" />
+    </div>
+    <div class="form-group">
+        <label for="recuperator-effectiveness">Recuperator effectiveness [%]:</label>
+        <input name="recuperator-effectiveness" id="recuperator-effectiveness" />
+    </div>
+    <div class="form-group">
+        <label for="heat-source-outlet">Heat-source outlet temperature [K]:</label>
+        <input name="heat-source-outlet" id="heat-source-outlet" />
+    </div>
+    
+    <p>&nbsp</p>
+    <button id="simulate-cycle" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Simulate cycle</button>
+    
+    <p>&nbsp</p>
+    <h4 class="font-semibold">Cycle performance:</h4>
+    <label for="power-output">Power output [kW]:</label>
+    <input type="textbox"  name="power-output" id="power-output" readonly /><br/>
+    <label for="thermal-efficiency">Thermal efficiency [%]:</label>
+    <input type="textbox"  name="thermal-efficiency" id="thermal-efficiency" readonly /><br/>
+    <label for="second-law">Second-law efficiency [%]:</label>
+    <input type="textbox"  name="second-law" id="second-law" readonly /><br/>
+    <label for="pump-work">Pump work [kW]:</label>
+    <input type="textbox"  name="pump-work" id="pump-work" readonly /><br/>
+    <label for="turbine-work">Turbine work [kW]:</label>
+    <input type="textbox"  name="turbine-work" id="turbine-work" readonly /><br/>
+    <label for="heat-input">Heat addition [kW]:</label>
+    <input type="textbox"  name="heat-input" id="heat-input" readonly /><br/>
+    <label for="heat-output">Heat rejection [kW]:</label>
+    <input type="textbox"  name="heat-output" id="heat-output" readonly /><br/>
+    <label for="heat-recuperated">Heat recuperated [kW]:</label>
+    <input type="textbox"  name="heat-recuperated" id="heat-recuperated" readonly /><br/>
+    <label for="mass-flow-rate">Mass-flow rate [kg/s]:</label>
+    <input type="textbox"  name="mass-flow-rate" id="mass-flow-rate" readonly /><br/>
+    
+    <p>&nbsp</p>
+    <h4 class="font-semibold">Heat-exchanger performance:</h4>
+    <label for="ua-hot">UA (heater) [kW/K]:</label>
+    <input type="textbox"  name="ua-hot" id="ua-hot" readonly /><br/>
+    <label for="ua-cold">UA (cooler) [kW/K]:</label>
+    <input type="textbox"  name="ua-cold" id="ua-cold" readonly /><br/>
+    <label for="ua-recup">UA (recuperator) [kW/K]:</label>
+    <input type="textbox"  name="ua-recup" id="ua-recup" readonly /><br/>
+    <label for="pp-hot">Pinch (heater) [K]:</label>
+    <input type="textbox"  name="pp-hot" id="pp-hot" readonly /><br/>
+    <label for="pp-cold">Pinch (cooler) [K]:</label>
+    <input type="textbox"  name="pp-cold" id="pp-cold" readonly /><br/>
+    <label for="pp-recup">Pinch (recuperator) [K]:</label>
+    <input type="textbox"  name="pp-recup" id="pp-recup" readonly /><br/>
+    
+    <py-script src="./run_simulation.py"></py-script>
+    
+</body>
+    
+</html>

@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Second paper from my RAEng Fellowship"
+date:   2022-05-01 00:00:00 +0000
+categories: research
+---
+Super happy to have the second journal article from my RAEng Research Fellowship out there! Super proud of this one with some encouraging results. The paper explores the wet-to-dry expansion of organic fluids for power generation and it explores the role of non-equilibrium effects on the two-phase expansion process.
+
+[Download the open-access article for free here.](https://doi.org/10.1016/j.ijheatmasstransfer.2022.122921)
+
+**Investigating the wet-to-dry expansion of organic fluids for power generation**
+
+*The successful and economic conversion of waste heat into electricity requires new, innovative, power cycles to be developed. The proposed wet-to-dry cycle, in which the working fluid transitions across the saturation dome during expansion, has been shown to offer significant thermodynamic benefits. However, the feasibility of achieving wet-to-dry expansion when non-equilibrium effects, which are expected during a high-speed two-phase expansion, are taken into account has not been previously established. This paper first introduces a simple method to assess the thermodynamic potential of a fluid for the wet-to-dry cycle, which confirms that the siloxanes MM and MDM are excellent contenders and under ideal conditions can achieve second law efficiencies approaching 90% whilst operating with heat-source temperatures around 200 degrees Celsius. The second part of this paper presents a one-dimensional nozzle design tool that accounts for thermal and mechanical non-equilibrium effects, which has been verified against previous studies and non-equilibrium computational-fluid dynamic simulations of the two-phase expansion of the refrigerant R1233zd(E). The model is then applied to the wet-to-dry expansion of MM under operating conditions directly relevant for the wet-to-dry cycle. The results firstly indicate the importance of accounting for non-equilibrium effects when designing nozzles for wet-to-dry expansion and the importance of having a realistic model that accounts for the break-up of droplets during the expansion. More importantly, the results reveal that for eight of the twelve cases considered it is still possible to achieve the full vapourisation of the working fluid within the nozzle when non-equilibrium effects are considered. This confirms the potential of the wet-to-dry cycle to enhance the performance of waste-heat recovery systems, which, in turn, necessitates further investigation, including experimental investigation, to further explore the concept.*
+
+<p></p>
+<div style="text-align:center">
+	<img src="{{site.baseurl}}/assets/HMT_wet_to_dry.png" alt="wet_to_dry" style="width:600px;" />
+</div>
+<p></p>
+
+### Acknowledgement 
+This project was supported by the Royal Academy of Engineering under the Research Fellowship scheme (2019–2024).
