@@ -1,5 +1,5 @@
 ---
-layout: open_orc
-title:  "openORC"
+layout: pocket_orc
+title:  "pocketORC"
 permalink: /pocketORC/
 ---
