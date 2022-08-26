@@ -3,7 +3,9 @@ layout: page
 title: Student resources
 ---
 
-Resources for students.
+Coming soon!
+
+<!--
 
 # Preparing scientific articles
 Guide to writing scientific articles.
@@ -15,3 +17,5 @@ Notes on Peng-Robinson model.
 # Useful resources
 * For writing ...
 * Plot digitiser etc.
+
+-->
