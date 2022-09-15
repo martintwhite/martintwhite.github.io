@@ -20,8 +20,8 @@ As a researcher my primary focus is on the development of small-scale energy sys
 Outside of research, I enjoy getting involved with teaching as much as possible and am a Fellow of the Higher Education Academy alongside being a STEM Ambassador.
 
 ### Employment
-Senior Lecturer in Mechanical Engineering, University of Sussex, Sep 2022 - Present
-Senior Lecturer in Thermal Power, City, University of London, Aug 2022 - Sep 2022
+Senior Lecturer in Mechanical Engineering, University of Sussex, Sep 2022 - Present<br>
+Senior Lecturer in Thermal Power, City, University of London, Aug 2022 - Sep 2022<br>
 Lecturer in Thermal Power, City, University of London, Sep 2019 - Aug 2022<br>
 Research Fellow, City, University of London, May 2018 – Aug 2019<br>
 Postdoctoral Research Associate, City, University of London, May 2017 – Apr 2018<br>
