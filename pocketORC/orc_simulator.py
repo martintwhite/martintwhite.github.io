@@ -47,9 +47,12 @@ def simulate_ORC(flu,x,eta,hot,cld,n_hxc,ts_flg,*args):
     # combine UA and pinch points:
     UA = [UAh,UAc,UAr]
     pp = [pph,ppc,ppr]
+    
+    th = [x[5],hot[0]]
+    tc = [tco,cld[0]]
 
     # return outputs:
-    return props, cycle_outpts, UA, pp
+    return props, cycle_outpts, UA, pp, th, tc
 
 ################################################################################
 # function to analyse thermodynamic cycle:
@@ -522,9 +525,14 @@ def cycle_performance(flu,mdot,props,thi,tci,mh,cph):
 def plot_cycle_ts(flu,props,th,tc,*args):
 
     # construct saturation curve:
-    flu.saturation_curve(100)
-    ssat = flu.ssat
-    tsat = flu.Tsat
+    if ((len(args) == 0) or ((len(args) == 1) and (args[0] is None))): 
+        flu.saturation_curve(100)
+        ssat = flu.ssat
+        tsat = flu.Tsat
+    else:
+        df   = args[0]
+        ssat = df['s_sat']
+        tsat = df['T_sat']
 
     # state points for t-s diagram:
     t = props[0,:]
@@ -540,7 +548,7 @@ def plot_cycle_ts(flu,props,th,tc,*args):
         
         # construct superheating region:
         if (t[4] < t[5]):
-            [t_sh,s_sh] = construct_isobar(flu,props[:,4],props[:,5],1,10)
+            [t_sh,s_sh] = construct_isobar(flu,props[:,4],props[:,5],1,5)
         else:
             t_sh = t[5]
             s_sh = s[5]
@@ -554,7 +562,7 @@ def plot_cycle_ts(flu,props,th,tc,*args):
  
     # construct precooling region:
     if (t[6] > t[8]):
-        [t_pc,s_pc] = construct_isobar(flu,props[:,6],props[:,8],1,10)
+        [t_pc,s_pc] = construct_isobar(flu,props[:,6],props[:,8],1,5)
     else:
         t_pc = t[6]
         s_pc = s[6]
@@ -570,14 +578,6 @@ def plot_cycle_ts(flu,props,th,tc,*args):
     t_ts = np.concatenate((t_hp,t_pc,t_sc),axis=None)
     s_ts = np.concatenate((s_hp,s_pc,s_sc),axis=None)
 
-    # determine if figure exists:
-    if (len(args) == 0): # no, create figure
-        ts_ax = plt
-    else: # yes, figure exists
-        ts_ax  = args[0]  # figure axis
-        ts_can = args[1]  # figure canvas
-        ts_ax.clear()
-
     # determine axis limites and scaling:
     s_cyc_min = s[0]
     s_cyc_max = s[5]
@@ -589,24 +589,22 @@ def plot_cycle_ts(flu,props,th,tc,*args):
     smax = s_cyc_max + 0.1*ds
     tmin = t_cyc_min - 0.1*dt
     tmax = t_cyc_max + 0.1*dt
+    
+    fig, ax = plt.subplots()
 
     # plot ts diagram:
-    ts_ax.plot(ssat-smin,tsat,'k-',linewidth=1)
-    ts_ax.fill(s_ts-smin,t_ts,facecolor='green', alpha=0.5, linewidth=1)
-    ts_ax.plot(s_ts-smin,t_ts,'g-',linewidth=1)
-    ts_ax.plot(s-smin,t,'go',markersize=3)
-    ts_ax.plot([s[2]-smin,s[5]-smin],th,'ro-',markersize=3,linewidth=1)
-    ts_ax.plot([s[7]-smin,s[10]-smin],tc,'bo-',markersize=3,linewidth=1)
-    ts_ax.xlabel('Entropy, s [J/(kg K)]')
-    ts_ax.ylabel('Temperature, T [K]')
-    ts_ax.xlim((0,smax-smin))
-    ts_ax.ylim((tmin,tmax))
+    ax.plot(ssat-smin,tsat,'k-',linewidth=1)
+    ax.fill(s_ts-smin,t_ts,facecolor='green', alpha=0.5, linewidth=1)
+    ax.plot(s_ts-smin,t_ts,'g-',linewidth=1)
+    ax.plot(s-smin,t,'go',markersize=3)
+    ax.plot([s[2]-smin,s[5]-smin],th,'ro-',markersize=3,linewidth=1)
+    ax.plot([s[7]-smin,s[10]-smin],tc,'bo-',markersize=3,linewidth=1)
+    ax.set_xlabel('Entropy, s [J/(kg K)]')
+    ax.set_ylabel('Temperature, T [K]')
+    ax.set_xlim((0,smax-smin))
+    ax.set_ylim((tmin,tmax))
 
-    # show/update figure:
-    if (len(args) == 0):
-        ts_ax.show()
-    else:
-        ts_can.draw() 
+    return fig, ax
     
 ################################################################################
 def construct_isobar(flu,props_in,props_out,region,n):

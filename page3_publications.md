@@ -7,6 +7,7 @@ permalink: /publications/
 Below is a list of all of my scientific publications to date. If you are interested in any of these and want to find out more, please get in touch.
 
 <h3>Journal articles</h3>
+- Abdeldayem, A., **White, M.**, Paggini, A., Ruggiero, M., Sayma, A., 2022, "Integrated aerodynamic and structural blade shape optimisation of axial turbines operating with supercritical carbon dioxide blended with dopants", Journal of Engineering for Gas Turbines and Power, 144(10), 101016. [https://doi.org/10.1115/1.4055232](https://doi.org/10.1115/1.4055232)
 - Salah, S., **White, M.**, Sayma, A., 2022, "A comparison of axial turbine loss models for air, sCO<sub>2</sub> and ORC turbines across a range of scales", International Journal of Thermofluids, 15, 100156. [https://doi.org/10.1016/j.ijft.2022.100156](https://doi.org/10.1016/j.ijft.2022.100156)
 - **White, M.**, 2021, "Investigating the wet-to-dry expansion of organic fluids for power generation", International Journal of Heat and Mass Transfer, 192, 122921. [https://doi.org/10.1016/j.ijheatmasstransfer.2022.122921](https://doi.org/10.1016/j.ijheatmasstransfer.2022.122921)
 - **White, M.**, 2021, "Cycle and turbine optimisation for an ORC operating with two-phase expansion", Applied Thermal Engineering, 192, 116852. [https://doi.org/10.1016/j.applthermaleng.2021.116852](https://doi.org/10.1016/j.applthermaleng.2021.116852)
