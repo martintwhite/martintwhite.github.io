@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pocketORC</title>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <link rel="stylesheet" href="./assets/pocketORC.css" />
+</head>
+    
+<body style="background-color:#white; margin:5px; padding:5px">
+ 
+    <py-config>
+        packages = ["numpy", "matplotlib","pandas"]
+        
+        [[fetch]]
+        files = ["./thermo_props.py","./orc_simulator.py","./pentane.csv"]
+    </py-config>
+
+    <div class="w3-sidebar" style="width:180px">
+        <img class="w3-bar-item" src="./assets/pocketORC.png" align="left" alt="prof" style="width:180px" />
+        <p>&nbsp</p>
+        <a href="./" class="w3-bar-item">pocketORC calculator</a>
+        <p>&nbsp</p>
+        <h4>Lessons</h4>
+        <a href="./lesson1.html" class="w3-bar-item">1. Saturation states</a>
+        <a href="./lesson2.html" class="w3-bar-item">2. Single-phase states</a>
+        <a href="./lesson3.html" class="w3-bar-item">3. Ideal and real cycles</a>
+        <a href="./lesson4.html" class="w3-bar-item">4. Recuperation</a>
+        <a href="./lesson5.html" class="w3-bar-item">5. Heat source and sink</a>
+        <a href="./lesson6.html" class="w3-bar-item">6. Alternative cycles</a>
+    </div>
+
+    <div style="margin-left:200px">
+
+        <h1>Lesson 4: Recuperation</h1>
+        <hr style="width:100%" text-align="left" margin-left="0px" color="lightgrey" size="1">
+        
+        <h2>Introduction</h2>
+        <p>In this lesson we introduce our first variation to our simple ORC system, and with it our fifth cycle variable, namely the recuperator effectiveness. As always, the aim of this lesson is to introduce the idea qualitatively, and discuss it within the context of pocketORC. For more details on the mathematical calculation, please refer to the supporting documentation.</p>
+        <p>&nbsp</p>
+        <hr style="width:100%" text-align="left" margin-left="0px" color="lightgrey" size="1">
+        
+        <h2>What is a recuperator?</h2>
+        <p>In our basic ORC power system it is not uncommon for the superheated vapour at the outlet of our expander to have a large degree of superheat (i.e., the temperatrue of the vapour is significantly higher than the condensation temperature). Moreover, the temperature rise in our pump is generally negligble and therefore the temperature of the liquid at the outlet of our pump is close to the condensation temperature. Subequently, this presents an opportunity to recycle heat within our cycle and improve the thermodynamic cycle efficiency.</p>
+        <p>&nbsp</p>
+        <p>This is done with the installation of a heat exchanger, referred to as a recuperator, that is installed to exchange heat between the hot vapour leaving the epxnader, and the cold liquid leaving the pump. During this heat exchange process, the hot vapour is cooled down, and the cold liquid is heated up.</p>
+        <p>&nbsp</p>
+        <p>This is beneficial because the temperature of the liquid entering the evaporator is now inrecreased, which means that less heat is now required from the heat source. Subsequently, for the same compression and expansion processes (i,e., the same pump and expander work), the required heat input has reduced and the cycle efficiency increases.</p>
+        <p>&nbsp</p>
+        <hr style="width:100%" text-align="left" margin-left="0px" color="lightgrey" size="1">
+        
+        <h2>Recuperator effectiveness</h2>
+        <p>To model the recuperator, we introduce our fifth cycle variable which is the <em>recuperator effectiveness</em>. This parameter is defined as the ratio of the internal heat recovered by the recuperator to the maximum heat that could theoretically be recovered.</p>
+        <p>&nbsp</p>
+        <p>When the recuperator effectiveness is set to zero, then no recuperation takes place and the cycle is essentially the basic ORC system we have seen in our earlier lessons.</p>
+        <p>&nbsp</p>
+        <p>When the recuperator effectiveness is set to 100%, then the maximum amount of heat recuperation takes places, which generally corresponds to cooling the hot vapour leaving the expander right down to the condensation temperature. However, this is rarely achieved in practice, as it would imply infinitely large heat exchangers.</p>
+        <p>&nbsp</p>
+        <p>Try out different values for the recuperator effectiveness below, and observe how it affects the cycle efficiency. The temperaure profiles of the two fluids exchanging heat are also observed in the right hand plot.</p>
+        <p>&nbsp</p>
+        <div class="form-group">
+            <label for="inpt-recup-eff">Recuperator effectiveness:</label>
+            <input name="inpt-recup-eff" id="inpt-recup-eff" />
+        </div>
+        <p>&nbsp</p>
+        <button id="btn-recup-eff" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>
+        <p>&nbsp</p>
+        <div id="plt-recup-eff"> </div>
+        
+        <p>&nbsp</p>
+        <hr style="width:100%" text-align="left" margin-left="0px" color="lightgrey" size="1">
+        <p>&nbsp</p>    
+        <footer> <small>&copy; Copyright 2023, Martin T. White</small> </footer> 
+
+    </div>
+    
+    <py-script src="./python/lesson4.py"></py-script>
+
+</body>
+    
+</html>

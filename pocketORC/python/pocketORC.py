@@ -1,5 +1,5 @@
 from js import document
-from pyodide import create_proxy 
+from pyodide.ffi import create_proxy 
 import thermo_props
 import orc_simulator
 import matplotlib.pyplot as plt
@@ -14,6 +14,7 @@ fig, ax = plt.subplots()
 fig.set_size_inches(4, 4)
 ax.set_position([0.175,0.125,0.80,0.85])
 display(fig,target="test_plt")
+plt.close(fig)
 
 def setup_fluid(fluid_name):
     
@@ -87,7 +88,7 @@ def _single_cycle(*args, **kwargs):
     ax.set_position([0.175,0.125,0.80,0.85])
     fig.set_size_inches(4, 4)
     display(fig,target="test_plt")
-    close(fig)
+    plt.close(fig)
     
 def _param_cycle(*args, **kwargs):
     
@@ -165,7 +166,6 @@ def _param_cycle(*args, **kwargs):
         document.getElementById("pph-"+str(i+1)).innerHTML = "{:.3f}".format(min(pp[0]))
         document.getElementById("ppc-"+str(i+1)).innerHTML = "{:.3f}".format(min(pp[1]))
         document.getElementById("ppr-"+str(i+1)).innerHTML = "{:.3f}".format(pp[2])
-
 
 # run function on click:    
 single_cycle = create_proxy(_single_cycle)

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pocketORC</title>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <link rel="stylesheet" href="./assets/pocketORC.css" />
+</head>
+    
+<body style="background-color:#white; margin:5px; padding:5px">
+ 
+    <py-config>
+        packages = ["numpy", "matplotlib","pandas"]
+        
+        [[fetch]]
+        files = ["./thermo_props.py","./orc_simulator.py","./pentane.csv"]
+    </py-config>
+
+    <div class="w3-sidebar" style="width:180px">
+        <img class="w3-bar-item" src="./assets/pocketORC.png" align="left" alt="prof" style="width:180px" />
+        <p>&nbsp</p>
+        <a href="./" class="w3-bar-item">pocketORC calculator</a>
+        <p>&nbsp</p>
+        <h4>Lessons</h4>
+        <a href="./lesson1.html" class="w3-bar-item">1. Saturation states</a>
+        <a href="./lesson2.html" class="w3-bar-item">2. Single-phase states</a>
+        <a href="./lesson3.html" class="w3-bar-item">3. Ideal and real cycles</a>
+        <a href="./lesson4.html" class="w3-bar-item">4. Recuperation</a>
+        <a href="./lesson5.html" class="w3-bar-item">5. Heat source and sink</a>
+        <a href="./lesson6.html" class="w3-bar-item">6. Alternative cycles</a>
+    </div>
+
+    <div style="margin-left:200px">
+
+        <h1>Lesson 1: Saturation states</h1>
+        <hr style="width:100%" text-align="left" margin-left="0px" color="lightgrey" size="1">
+        
+        <h2>Introduction</h2>
+        <p>This first lesson will review important concepts related to understanding the thermodynamic behaviour of working fluids under saturation conditions. Understanding this is an integral part of understanding the simulation an ORC power system.</p>
+        <p>&nbsp</p>
+        <p>It is assumed that the user already has some familiarity with important concepts, such as thermodynamic state variables (i.e., temperature, pressure, density, enthalpy, entropy) and the general operating principle of a closed-loop power cycle, such as the steam Rankine cycle.</p>
+        <p>&nbsp</p>
+        <p>The aim of this section is not to delve into detail regarding the calculation of thermodynamic properties, but to start to build up a working model of an ORC power system and introduce the key cycle variables considered within the pocketORC calculator. For the purposes of this discussion it is considered enough to understand that an equation of state essentially links all of our thermodynamic properties together, and for some known thermodynamic properties (e.g., temperature and pressure) properties such as enthalpy, entropy and density can be easily retrieved using a suitable equation of state.</p>
+        <p>&nbsp</p>
+        <hr style="width:100%" text-align="left" margin-left="0px" color="lightgrey" size="1">
+
+        <h2>What are saturation properties?</h2>
+        <p>We start by revising saturation properties. The saturation temperature is the temperature at which a fluid (at a known pressure) can exist in either a liquid or vapour state. For example, the saturation temperature of water at atmospheric pressure is 100 °C, and that is the temperature at which water boils (i.e., transitions from being a liquid to a vapour).</p>
+        <p>&nbsp</p>
+        <p>The saturation temperature depends on the fluid pressure, and a higher or lower pressure corresponds to a higher or lower saturation temperature. For example, if water is pressurised to twice atmospheric pressure it would boil at approximately 120 °C as opposed to 100 °C.</p>
+        <p>&nbsp</p>
+        <p>During the process of boiling (also referred to as evaporation), a certain amount of energy must be added to the liquid in order to transform it into vapour. And the addition of that energy is associated with an increase in the enthalpy, and entropy, of the fluid. As the fluid changes from a liquid to a vapour, its density will also reduce.</p>
+        <p>&nbsp</p>
+        <p>A fluid is said to be in a saturated liquid state when it is at the saturation temperature and saturation pressure, but is completely in a liquid state (i.e., no vapour is present). In that state, the fluid will have an associated enthalpy and entropy value.</p>
+        <p>&nbsp</p>
+        <p>Similarly, a fluid is said to be in a saturated vapour state when it is at the saturation temperature and saturation pressure, but is completely in the vapour state (i.e., no liquid is present). In this state, the fluid will also have an associated enthalpy, and entropy value, which will be higher than the saturated liquid values.</p>
+        <p>&nbsp</p>
+        <p>Thus, by knowing the properties of the saturated liquid and saturated vapour at different pressures we can start to plot the saturation curve of the fluid. Different pairs of thermodynamic properties can be used in the construction of these plots, but generally plotting in the temperature-entropy plane is most common within the ORC community.</p>
+        <p>&nbsp</p>
+        <p>Below is the saturation dome for n-pentane. Try varying the fluid pressure to see how the saturation properties vary with pressure, starting with a value of around 1 bar.</p>
+        <p>&nbsp</p>
+        <div class="form-group">
+            <label for="inpt-psat-single">Fluid pressure [bar]:</label>
+            <input name="inpt-psat-single" id="inpt-psat-single" />
+        </div>
+        <p>&nbsp</p>
+        <button id="btn-psat-single" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>
+        <p>&nbsp</p>        
+        <div id="plt-psat-single"> </div>
+        
+        <hr style="width:100%" text-align="left" margin-left="0px" color="lightgrey" size="1">
+        <h2>Evaporation and condensation</h2>
+        <p>In order for a power cycle generate power we need to introduce a pressure difference into the system. This is done by the introduction of the pump to raise the pressure of fluid, and an expander to reduce the pressure of fluid and generate work in the process.</p>
+        <p>&nbsp</p>
+        <p>As a result we have two-pressure levels within our system. In the high-pressure side of our system, the high pressure liquid is evaporated using the available heat source, during which it is converted form a liquid to a vapour. In the low-pressure side of our system, the low pressure vapour is condensed using a suitable heat sink, during which it is converted from a vapour back into a liquid.</p>
+        <p>&nbsp</p>
+        <p>The values for the high and low pressure of our system are related to corresponding saturation temperatures. The saturation temperature associated with the high pressure level is referred to as the evaporation temperature, whilst the saturation temperature associated with the low pressure level is referred to as the condensation temperature.</p>
+        <p>&nbsp</p>
+        <p>When designing an ORC system, the condensation and evaporation conditions are variables that can be adjusted by the designer to alter the performance of the system. This introduces the first two design variables within the pocketORC: namely the <em>condensation temperature</em> and the <em>system pressure ratio</em>.</p>
+        <ul>
+            <li><p>The condensation temperature directly specifies the working fluid temperature within the condenser, which in turn defines the condensation pressure.</p></li>
+            <li><p>The pressure ratio is defined as the ratio of the evaporation pressure (high pressure) to the condensation pressure (low pressure). And therefore, once the condensation pressure is known the evaporation pressure, and hence temperature, can be readily determined.</p></li>
+        </ul>
+        <p>With the evaporation and condensation temperatures and pressures defined, we can easily retrive the saturated liquid and vapour properties. Try varying these two parameters below to see how they impact the evaporation and condensation conditions. As a starting point, try a condensation temperature 313 K and a pressure ratio of 5.</p>
+        <p>&nbsp</p>
+        <div class="form-group">
+            <label for="inpt-tcond">Condensation temperature [K]:</label>
+            <input name="inpt-tcond" id="inpt-tcond" />
+        </div>
+        <div class="form-group">
+            <label for="inpt-pr">Pressure ratio [-]:</label>
+            <input name="inpt-pr" id="inpt-pr" />
+        </div>
+        <p>&nbsp</p>
+        <button id="btn-tcond-pr" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>
+        <p>&nbsp</p>        
+        <div id="plt-tcond-pr"> </div>
+        <p>&nbsp</p>
+        <p>It is worth noting that other pairs of inputs could be defined instead of the condensation temperature and pressure ratio. For example, the evaporation and condensation temperatures could be directly specified, or likewise the evaporation and condensation pressures could be defined as inputs. The choice is larger a matter of preference. However, here condensation temperature is selected since this parameter is generally controlled by the available heat sink and is unlikely to change significantly with the working fluid (unlike condensation pressure). The pressure ratio is a convinent parameter which direclty controls the degree to which pressure changes across the pump and tubrine.</p>
+        
+        <p>&nbsp</p>
+        <hr style="width:100%" text-align="left" margin-left="0px" color="lightgrey" size="1">
+        <p>&nbsp</p>    
+        <footer> <small>&copy; Copyright 2023, Martin T. White</small> </footer> 
+
+    </div>
+    
+    <py-script src="./python/lesson1.py"></py-script>
+
+</body>
+    
+</html>
