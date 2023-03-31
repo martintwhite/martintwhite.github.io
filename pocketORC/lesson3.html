@@ -16,7 +16,7 @@
         packages = ["numpy", "matplotlib","pandas"]
         
         [[fetch]]
-        files = ["./thermo_props.py","./orc_simulator.py","./pentane.csv"]
+        files = ["./thermo_props.py","./orc_simulator.py","./n-pentane.csv"]
     </py-config>
 
     <div class="w3-sidebar" style="width:180px">
@@ -56,23 +56,23 @@
         <p>&nbsp</p>
         <p>At this point we can introduce our first performance metric, which is the thermodynamic cycle efficiency. This is defined in terms of how much work the cycle produces, compared to how much heat goes in. The net work produced by the cycle is the difference between the work produced by the expander and the work consumed by the pump.</p>
         <p>&nbsp</p>
-        <p>Use the calculator below to see how our four design variables influence the cycle efficiency. Here a representative heat source at a fixed temperature of 150 °C, and a heat sink at a fixed temperature of 20 °C, are introduced. See how high you can get the efficiency without the cycle exceeding these temperature limits. To start off, try a condensation temperature of 313 K, a pressure ratio of 10 and 5 K for both the pump subcooling and expander superheat.</p>
+        <p>Use the calculator below to see how our four design variables influence the cycle efficiency. Here a representative heat source at a fixed temperature of 150 °C, and a heat sink at a fixed temperature of 20 °C, are introduced. See how high you can get the efficiency without the cycle exceeding these temperature limits.</p>
         <p>&nbsp</p>
         <div class="form-group">
             <label for="inpt-tcond-ideal">Condensation temperature [K]:</label>
-            <input name="inpt-tcond-ideal" id="inpt-tcond-ideal" />
+            <input name="inpt-tcond-ideal" id="inpt-tcond-ideal" type="range" min="293" max="323"  />
         </div>
         <div class="form-group">
             <label for="inpt-subcool-ideal">Subcooling at pump inlet [K]:</label>
-            <input name="inpt-subcool-ideal" id="inpt-subcool-ideal" />
+            <input name="inpt-subcool-ideal" id="inpt-subcool-ideal" type="range" min="0" max="20"  />
         </div>         
         <div class="form-group">
             <label for="inpt-pr-ideal">Pressure ratio [-]:</label>
-            <input name="inpt-pr-ideal" id="inpt-pr-ideal" />
+            <input name="inpt-pr-ideal" id="inpt-pr-ideal" type="range" min="1" max="30" />
         </div>
         <div class="form-group">
             <label for="inpt-superheat-ideal">Superheating at turbine inlet [K]:</label>
-            <input name="inpt-superheat-ideal" id="inpt-superheat-ideal" />
+            <input name="inpt-superheat-ideal" id="inpt-superheat-ideal" type="range" min="0" max="20" />
         </div>
         <p>&nbsp</p>
         <button id="btn-ideal-cycle" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>
@@ -93,11 +93,11 @@
         <p>&nbsp</p>
         <div class="form-group">
             <label for="inpt-etap">Pump isentropic efficiency [%]:</label>
-            <input name="inpt-etap" id="inpt-etap" />
+            <input name="inpt-etap" id="inpt-etap" type="range" min="50" max="100"  />
         </div>
         <div class="form-group">
             <label for="inpt-etae">Expander isentropic efficiency [%]:</label>
-            <input name="inpt-etae" id="inpt-etae" />
+            <input name="inpt-etae" id="inpt-etae" type="range" min="50" max="100" />
         </div>         
         <p>&nbsp</p>
         <button id="btn-real-cycle" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>

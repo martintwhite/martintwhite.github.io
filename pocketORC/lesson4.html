@@ -16,7 +16,7 @@
         packages = ["numpy", "matplotlib","pandas"]
         
         [[fetch]]
-        files = ["./thermo_props.py","./orc_simulator.py","./pentane.csv"]
+        files = ["./thermo_props.py","./orc_simulator.py","./n-pentane.csv"]
     </py-config>
 
     <div class="w3-sidebar" style="width:180px">
@@ -63,7 +63,7 @@
         <p>&nbsp</p>
         <div class="form-group">
             <label for="inpt-recup-eff">Recuperator effectiveness:</label>
-            <input name="inpt-recup-eff" id="inpt-recup-eff" />
+            <input name="inpt-recup-eff" id="inpt-recup-eff" type="range" min="0" max="100"  />
         </div>
         <p>&nbsp</p>
         <button id="btn-recup-eff" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>

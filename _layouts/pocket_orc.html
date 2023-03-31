@@ -16,7 +16,7 @@
         packages = ["numpy", "matplotlib","pandas"]
         
         [[fetch]]
-        files = ["./thermo_props.py","./orc_simulator.py","./pentane.csv"]
+        files = ["./thermo_props.py","./orc_simulator.py","./R1233zd(E).csv","./n-pentane.csv","./MM.csv"]
     </py-config>
 
     <div class="w3-sidebar" style="width:180px">
@@ -46,6 +46,25 @@
         <p>If you know your way around an ORC system, then jump straight in using the form below. Alternatively, you can follow the lessons available in the left-hand menu. These will talk you through and introduce the main model inputs and variables.</p>
         <p>&nbsp</p>
         <p>Documentation explaining  the underlying calculations behind this tool is currently under preparation and will be made available here once complete.</p>
+        
+        <p>&nbsp</p>
+        <hr style="width:100%" text-align="left" margin-left="0px" color="lightgrey" size="1">
+        <h2>Operating principle of an ORC</h2>
+        <p>A simple organic Ranine cycle (ORC) power system is based on four thermodynamic processes, each of which is carried out by a specific piece of equipment. The cycle is also a closed loop in that after carrying out the four process sequentially the properties of the circulating working fluid return to the original conditions. A schematic of this cycle is shown in the figure below.</p>
+        <p>&nbsp</p>
+        <p>We start our cycle at the inlet to the pump, referenced as station 1, where the working fluid starts in a cold, liquid state at low pressure. The job of the pump is to increase the pressure of the liquid to a higer pressure, which is achieved via the addition of work using a motor.</p>
+        <p>&nbsp</p>
+        <p>After the pump, referenced as station 2, the high pressure liquid then enters the evaporator which uses the available heat source to heat up and evaporate the working fluid, thus generating vapour at a high temperature and pressure.</p>
+        <p>&nbsp</p>
+        <p>This vapour then moves to the expander inlet, referenced as station 3, where the fluid is expanded. During this process, the pressure of the working fluid reduces, and mechanical work is extracted by the expander. This mechanical work is converted to electricity using a generator.</p>
+        <p>&nbsp</p>
+        <p>The working fluid leaving the expander, referenced as station 4, is at low pressure but is still in a vapour state. The final process is to cool down and condense the working fluid using a condenser. This returns to the working fluid back to its initial state. During this process, heat is rejected from the cycle to the available heat sink.</p>
+        <p>&nbsp</p>
+        <p>The efficiency of the simple ORC system can be improved with the addition of a recuperator. The job of this component is to use the heat contained within the working fluid leaving the expander in order to heat up the liquid leaving the pump. This reduces the amount of heat required from the heat sink, and reduces the amount of heat rejected to the heat sink. This cycle is also reported in the figure below.</p>
+        <p>&nbsp</p>
+        
+        <img src="./assets/cycle_schematics.png" align="middle" alt="prof" style="width:1000px" />
+        <p><em>Schematics of a simple ORC system (left) and recuperated ORC system (right).</em></p>
 
         <p>&nbsp</p>
         <hr style="width:100%" text-align="left" margin-left="0px" color="lightgrey" size="1">
@@ -110,7 +129,9 @@
             </div>
             <div class="column">
                 <select name="working-fluid" id="working-fluid-select">
+                    <option value="R1233zd(E)">R1233zd(E)</option>
                     <option value="n-pentane">n-pentane</option>
+                    <option value="MM">MM</option> -->
                 </select>
             </div>
         </div> 
@@ -189,7 +210,7 @@
         <p>&nbsp</p>
         <p> It is also useful to view the cycle on a temperature-entropy diagram. In the below figure the green region indicates the state points of the working fluid throughout the cycle. Superimposed onto that are the heat source (red) and heat sink (blue) temperature profiles.</p>
         <p>&nbsp</p>
-        <div id="test_plt"> </div>
+        <div id="cycle_Ts_diagram"> </div>
 
         <hr style="width:100%" text-align="left" margin-left="0px" color="lightgrey" size="1">
         <h2>Parametric study</h2>

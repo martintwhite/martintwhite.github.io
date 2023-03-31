@@ -16,7 +16,7 @@
         packages = ["numpy", "matplotlib","pandas"]
         
         [[fetch]]
-        files = ["./thermo_props.py","./orc_simulator.py","./pentane.csv"]
+        files = ["./thermo_props.py","./orc_simulator.py","./n-pentane.csv"]
     </py-config>
 
     <div class="w3-sidebar" style="width:180px">
@@ -54,11 +54,11 @@
         <p>&nbsp</p>
         <p>For this reason, the heat source outlet temperature, and therefore the amount of heat extracted by the ORC, can often also be considered as a cycle variable.</p>
         <p>&nbsp</p>
-        <p>You can try varying the heat source outlet temperature below for the defined cycle. Try to find the optimal value that results in the largest power production, but still results in feasible temperature profiles (i.e., the working fluid and heat source temperature profiles cannot cross each other). Start at 423 K and see what happens as you reduce the input value.</p>
+        <p>You can try varying the heat source outlet temperature below for the defined cycle. Try to find the optimal value that results in the largest power production, but still results in feasible temperature profiles (i.e., the working fluid and heat source temperature profiles cannot cross each other). Start at the highest value and see what happens as you reduce it.</p>
         <p>&nbsp</p>
         <div class="form-group">
             <label for="inpt-hot-out">Heat-source outlet temperature [K]:</label>
-            <input name="inpt-hot-out" id="inpt-hot-out" />
+            <input name="inpt-hot-out" id="inpt-hot-out" type="range" min="323" max="423"  />
         </div>
         <p>&nbsp</p>
         <button id="btn-hot-out" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>
@@ -74,11 +74,11 @@
         <p>&nbsp</p>
         <p>From the perspective of the ORC designer the goal is to ensure that the heat sink mass flow rate (i.e., the availability of the heat sink) is large enough such that there is not a large change in temperature of the heat sink fluid in the condenser. If the mass flow rate is too low, the condensation temperature of the ORC system has to be increased in order to ensure feasible temperature profiles in the heat exchanger. This would cause a reduction in the thermal efficiency of the cycle.</p>
         <p>&nbsp</p>
-        <p>Use the box below to see how the heat sink mass flow rate affects the performance of the cycle. Start with a value of 1 kg/s and then see how much you need to increase heat sink mass flow rate to achieve a feasible cycle. For reference, the heat sink is water, whilst the heat source is a hot air with a mass flow rate of 10 kg/s.</p>
+        <p>Use the box below to see how the heat sink mass flow rate affects the performance of the cycle. Start with the lowest value and set what happens as you increase it.</p>
         <p>&nbsp</p>
         <div class="form-group">
             <label for="inpt-cold-mass">Heat-sink mass-flow rate [kg/s]:</label>
-            <input name="inpt-cold-mass" id="inpt-cold-mass" />
+            <input name="inpt-cold-mass" id="inpt-cold-mass" type="range" min="1" max="20" />
         </div>
         <p>&nbsp</p>
         <button id="btn-cold-mass" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>

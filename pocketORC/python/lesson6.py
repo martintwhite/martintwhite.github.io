@@ -15,11 +15,11 @@ display(fig,target="plt-vapour-quality")
 plt.close(fig)
 
 # initialise fluid:
-fluid = thermo_props.pr_fluid("n-pentane",438,2.48e6,0.441774,
-                              [10.4923,0.6569,-4.13e-4 ],300,0.01,72.1488)
+fluid = thermo_props.pr_fluid("n-pentane",469.7,3.3675e6,0.2510,
+                               [12.9055,0.3906,-0.1036e-3],300,0.01,72.1488)
 
 # load saturation curve:
-df   = pd.read_csv(r'./pentane.csv')
+df   = pd.read_csv(r'./n-pentane.csv')
 ssat = df['s_sat']
 tsat = df['T_sat']
 
@@ -49,8 +49,8 @@ eta = [0.7,0.8]               # component efficiencies
 def _transcritical(*args, **kwargs):
     
     # fixed inputs:
-    hot = [473,1,1000]            # heat-source conditions    
-    x   = [313,2,10,1.5,0.7,383]  # cycle variables
+    hot = [503,1,1000]            # heat-source conditions    
+    x   = [313,2,10,1.5,0.7,433]  # cycle variables
     
     # get inputs:
     x[2] = float(document.getElementById("inpt-pr-supercrit").value)
@@ -68,10 +68,10 @@ def _transcritical(*args, **kwargs):
     
     # update T-s plot:
     fig, ax = orc_simulator.plot_cycle_ts(fluid,props,th,tc,df)
-    ax.set_ylim((tmin,493))
-    ax.text(50,493-8,eta_str,color='k',size=fs)
-    ax.text(50,493-16,m_str,color='k',size=fs)
-    ax.text(50,493-24,Wn_str,color='k',size=fs)    
+    ax.set_ylim((tmin,513))
+    ax.text(50,513-8,eta_str,color='k',size=fs)
+    ax.text(50,513-16,m_str,color='k',size=fs)
+    ax.text(50,513-24,Wn_str,color='k',size=fs)    
     ax.set_position([0.175,0.125,0.80,0.85])
     fig.set_size_inches(4, 4)
     display(fig,target="plt-pr-supercrit")
@@ -84,7 +84,7 @@ def _two_phase(*args, **kwargs):
     x   = [303,2,10,0.5,0.7,373]  # cycle variables
     
     # get inputs:
-    x[3] = float(document.getElementById("inpt-vapour-quality").value)
+    x[3] = float(document.getElementById("inpt-vapour-quality").value)/100
     
     # simulate cycle:
     [props,cycle_out,UA,pp,th,tc] = orc_simulator.simulate_ORC(fluid,x,eta,hot,cld,n_hxc,0)
@@ -95,7 +95,7 @@ def _two_phase(*args, **kwargs):
     # update T-s plot:
     fig, ax = orc_simulator.plot_cycle_ts(fluid,props,th,tc,df)
     ax.set_ylim((tmin,tmax))
-    ax.set_xlim((0,2000))
+    ax.set_xlim((0,1600))
     ax.set_position([0.175,0.125,0.80,0.85])
     fig.set_size_inches(4, 4)
     display(fig,target="plt-vapour-quality")

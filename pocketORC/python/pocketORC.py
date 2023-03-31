@@ -13,26 +13,45 @@ n_hxc = [2,2,2,5,2,2,2,2]
 fig, ax = plt.subplots()
 fig.set_size_inches(4, 4)
 ax.set_position([0.175,0.125,0.80,0.85])
-display(fig,target="test_plt")
+display(fig,target="cycle_Ts_diagram")
 plt.close(fig)
 
 def setup_fluid(fluid_name):
     
-    if fluid_name == "n-pentane":
-        tc = 438
-        pc = 2480000
-        om = 0.441774
-        cp = [ 10.4923, 0.6569, -4.13e-4 ]
-        wm = 72.1488
+    # avilable fluids:
+    fluids = [ "R1233zd(E)", "n-pentane",  "MM" ]
+    Tc     = [  439.6,        469.7,        518.7     ]
+    Pc     = [  3.6237e6,     3.3675e6,     1.93113e6 ]
+    om     = [  0.3025,       0.2510,       0.4180    ]
+    wm     = [  130.4962,     72.1488,      162.3768  ]
+    cp1    = [  33.3490,      12.9055,      64.6367   ]
+    cp2    = [  0.2823,       0.3906,       0.6695    ]
+    cp3    = [ -0.1523e-3,   -0.1036e-3,   -0.2895e-3 ] 
+
+    # set index and read csv file containing saturation curve:
+    if fluid_name == "R1233zd(E)":
+        i  = 0
+        df = pd.read_csv(r'./R1233zd(E).csv')
+    elif fluid_name == "n-pentane":
+        i  = 1
+        df = pd.read_csv(r'./n-pentane.csv')
+    elif fluid_name == "MM":
+        i  = 2
+        df = pd.read_csv(r'./MM.csv')
         
-    return thermo_props.pr_fluid(fluid_name,tc,pc,om,cp,300,0.01,wm)
+    # setup fluid:
+    fluid = thermo_props.pr_fluid(
+        fluids[i],Tc[i],Pc[i],om[i],[cp1[i],cp2[i],cp3[i]],300,0.01,wm[i])
+        
+    # return fluid and datafile:
+    return fluid, df
 
 def _single_cycle(*args, **kwargs):
 
     # setup fluid:
-    name  = document.getElementById("working-fluid-select").value
-    fluid = setup_fluid(name)
-    
+    name = document.getElementById("working-fluid-select").value
+    [fluid,df] = setup_fluid(name)
+
     # get heat-source conditions:
     hot = [0,0,0]
     hot[0] = float(document.getElementById("heat-source-temperature").value)
@@ -82,19 +101,18 @@ def _single_cycle(*args, **kwargs):
     document.getElementById("pp-recup").innerHTML = "{:.3f}".format(pp[2])
     
     # update T-s plot:   
-    document.getElementById("test_plt").innerHTML = ""
-    df = pd.read_csv(r'./pentane.csv')
+    document.getElementById("cycle_Ts_diagram").innerHTML = ""
     fig, ax = orc_simulator.plot_cycle_ts(fluid,props,th,tc,df)
     ax.set_position([0.175,0.125,0.80,0.85])
     fig.set_size_inches(4, 4)
-    display(fig,target="test_plt")
+    display(fig,target="cycle_Ts_diagram")
     plt.close(fig)
     
 def _param_cycle(*args, **kwargs):
     
     # setup fluid:
-    name  = document.getElementById("working-fluid-select").value
-    fluid = setup_fluid(name)
+    name = document.getElementById("working-fluid-select").value
+    [fluid,df] = setup_fluid(name)
     
     # get heat-source conditions:
     hot = [0,0,0]

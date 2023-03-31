@@ -16,7 +16,7 @@
         packages = ["numpy", "matplotlib","pandas"]
         
         [[fetch]]
-        files = ["./thermo_props.py","./orc_simulator.py","./pentane.csv"]
+        files = ["./thermo_props.py","./orc_simulator.py","./n-pentane.csv"]
     </py-config>
 
     <div class="w3-sidebar" style="width:180px">
@@ -50,11 +50,11 @@
         <p>&nbsp</p>
         <p>More generally, we can say that when a fluid at a known pressure is below the corresponding saturation temperature it is in a liquid state. In this case, it is referred to as a <em>subcooled liquid</em>. Similarly, if the fluid is at a temperature above the saturation temperature it is in a vapour state, and is refered to as a <em>superheated vapour</em>.</p>
         <p>&nbsp</p>
-        <p>Use the interactive chart below to see how the properties of the fluid change as the fluid temperature is varied. This particular plot corresponds to n-pentane at a constant pressure of 5 bar. Therefore, the solid green line can be considered an <em>isobar</em> (i.e., a line of constant pressure). Try starting at a temperature of 303 K and see what happens as temperature increases.</p>
+        <p>Use the interactive chart below to see how the properties of the fluid change as the fluid temperature is varied. This particular plot corresponds to n-pentane at a constant pressure of 5 bar. Therefore, the solid green line can be considered an <em>isobar</em> (i.e., a line of constant pressure).</p>
         <p>&nbsp</p>
         <div class="form-group">
             <label for="inpt-sub-super">Fluid temperature [K]:</label>
-            <input name="inpt-sub-super" id="inpt-sub-super" />
+            <input name="inpt-sub-super" id="inpt-sub-super" type="range" min="273" max="423"  />
         </div>
         <p>&nbsp</p>
         <button id="btn-sub-super" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>
@@ -73,19 +73,19 @@
         <p>&nbsp</p>
         <div class="form-group">
             <label for="inpt-tcond">Condensation temperature [K]:</label>
-            <input name="inpt-tcond" id="inpt-tcond" />
+            <input name="inpt-tcond" id="inpt-tcond" type="range" min="293" max="323" />
         </div>
         <div class="form-group">
             <label for="inpt-subcool">Subcooling at pump inlet [K]:</label>
-            <input name="inpt-subcool" id="inpt-subcool" />
+            <input name="inpt-subcool" id="inpt-subcool" type="range" min="0" max="20"  />
         </div>         
         <div class="form-group">
             <label for="inpt-pr">Pressure ratio [-]:</label>
-            <input name="inpt-pr" id="inpt-pr" />
+            <input name="inpt-pr" id="inpt-pr" type="range" min="1" max="20" />
         </div>
         <div class="form-group">
             <label for="inpt-superheat">Superheating at turbine inlet [K]:</label>
-            <input name="inpt-superheat" id="inpt-superheat" />
+            <input name="inpt-superheat" id="inpt-superheat" type="range" min="0" max="20"  />
         </div>
         <p>&nbsp</p>
         <button id="btn-4-variables" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>

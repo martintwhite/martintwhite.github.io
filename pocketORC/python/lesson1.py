@@ -17,11 +17,11 @@ plt.close(fig)
 fs = 7
 
 # initialise fluid:
-fluid = thermo_props.pr_fluid("n-pentane",438,2.48e6,0.441774,
-                              [10.4923,0.6569,-4.13e-4 ],300,0.01,72.1488)
+fluid = thermo_props.pr_fluid("n-pentane",469.7,3.3675e6,0.2510,
+                               [12.9055,0.3906,-0.1036e-3],300,0.01,72.1488)
 
 # load saturation curve:
-df   = pd.read_csv(r'./pentane.csv')
+df   = pd.read_csv(r'./n-pentane.csv')
 ssat = df['s_sat']
 tsat = df['T_sat']
 
@@ -71,6 +71,7 @@ def _p_saturation_single(*args, **kwargs):
     
     # strings for plot:
     T_sat_str  = 'Saturation temperature = ' + "{:.2f}".format(Tl) + ' K'
+    p_sat_str  = 'Saturation temperature = ' + "{:.2f}".format(p/1e5) + ' bar'
     d_satl_str = 'Liquid density = ' + "{:.2f}".format(dl) + ' kg/m3'
     h_satl_str = 'Liquid enthalpy = ' + "{:.2f}".format(hl/1e3) + ' kJ/kg'
     s_satl_str = 'Liquid entropy = ' + "{:.2f}".format(sl-smin) + ' J/(kg K)'
@@ -80,12 +81,13 @@ def _p_saturation_single(*args, **kwargs):
     
     # add strings to plot:
     ax.text(50,tmax-10,T_sat_str,color='k',size=fs)
-    ax.text(50,tmax-20,d_satl_str,color='b',size=fs)
-    ax.text(50,tmax-30,h_satl_str,color='b',size=fs)
-    ax.text(50,tmax-40,s_satl_str,color='b',size=fs)
-    ax.text(50,tmax-50,d_satv_str,color='r',size=fs)
-    ax.text(50,tmax-60,h_satv_str,color='r',size=fs)
-    ax.text(50,tmax-70,s_satv_str,color='r',size=fs)
+    ax.text(50,tmax-20,p_sat_str,color='k',size=fs)
+    ax.text(50,tmax-30,d_satl_str,color='b',size=fs)
+    ax.text(50,tmax-40,h_satl_str,color='b',size=fs)
+    ax.text(50,tmax-50,s_satl_str,color='b',size=fs)
+    ax.text(50,tmax-60,d_satv_str,color='r',size=fs)
+    ax.text(50,tmax-70,h_satv_str,color='r',size=fs)
+    ax.text(50,tmax-80,s_satv_str,color='r',size=fs)
     
     # set position of figure:
     ax.set_position([0.175,0.125,0.80,0.85])

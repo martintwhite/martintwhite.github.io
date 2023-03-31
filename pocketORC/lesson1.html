@@ -16,7 +16,7 @@
         packages = ["numpy", "matplotlib","pandas"]
         
         [[fetch]]
-        files = ["./thermo_props.py","./orc_simulator.py","./pentane.csv"]
+        files = ["./thermo_props.py","./orc_simulator.py","./n-pentane.csv"]
     </py-config>
 
     <div class="w3-sidebar" style="width:180px">
@@ -60,11 +60,11 @@
         <p>&nbsp</p>
         <p>Thus, by knowing the properties of the saturated liquid and saturated vapour at different pressures we can start to plot the saturation curve of the fluid. Different pairs of thermodynamic properties can be used in the construction of these plots, but generally plotting in the temperature-entropy plane is most common within the ORC community.</p>
         <p>&nbsp</p>
-        <p>Below is the saturation dome for n-pentane. Try varying the fluid pressure to see how the saturation properties vary with pressure, starting with a value of around 1 bar.</p>
+        <p>Below is the saturation dome for n-pentane. Try varying the fluid pressure to see how the saturation properties vary with pressure.</p>
         <p>&nbsp</p>
         <div class="form-group">
             <label for="inpt-psat-single">Fluid pressure [bar]:</label>
-            <input name="inpt-psat-single" id="inpt-psat-single" />
+            <input name="inpt-psat-single" id="inpt-psat-single" type="range" min="1" max="30">
         </div>
         <p>&nbsp</p>
         <button id="btn-psat-single" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>
@@ -84,15 +84,15 @@
             <li><p>The condensation temperature directly specifies the working fluid temperature within the condenser, which in turn defines the condensation pressure.</p></li>
             <li><p>The pressure ratio is defined as the ratio of the evaporation pressure (high pressure) to the condensation pressure (low pressure). And therefore, once the condensation pressure is known the evaporation pressure, and hence temperature, can be readily determined.</p></li>
         </ul>
-        <p>With the evaporation and condensation temperatures and pressures defined, we can easily retrive the saturated liquid and vapour properties. Try varying these two parameters below to see how they impact the evaporation and condensation conditions. As a starting point, try a condensation temperature 313 K and a pressure ratio of 5.</p>
+        <p>With the evaporation and condensation temperatures and pressures defined, we can easily retrive the saturated liquid and vapour properties. Try varying these two parameters below to see how they impact the evaporation and condensation conditions.</p>
         <p>&nbsp</p>
         <div class="form-group">
             <label for="inpt-tcond">Condensation temperature [K]:</label>
-            <input name="inpt-tcond" id="inpt-tcond" />
+            <input name="inpt-tcond" id="inpt-tcond" type="range" min="293" max="323"/>
         </div>
         <div class="form-group">
             <label for="inpt-pr">Pressure ratio [-]:</label>
-            <input name="inpt-pr" id="inpt-pr" />
+            <input name="inpt-pr" id="inpt-pr" type="range" min="1" max="20" />
         </div>
         <p>&nbsp</p>
         <button id="btn-tcond-pr" class="p-2 my-2 bg-green-200 border-2 border-gray-400 rounded-lg">Calculate</button>

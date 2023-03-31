@@ -15,11 +15,11 @@ display(fig,target="plt-real-cycle")
 plt.close(fig)
 
 # initialise fluid:
-fluid = thermo_props.pr_fluid("n-pentane",438,2.48e6,0.441774,
-                              [10.4923,0.6569,-4.13e-4 ],300,0.01,72.1488)
+fluid = thermo_props.pr_fluid("n-pentane",469.7,3.3675e6,0.2510,
+                               [12.9055,0.3906,-0.1036e-3],300,0.01,72.1488)
 
 # load saturation curve:
-df   = pd.read_csv(r'./pentane.csv')
+df   = pd.read_csv(r'./n-pentane.csv')
 ssat = df['s_sat']
 tsat = df['T_sat']
 
