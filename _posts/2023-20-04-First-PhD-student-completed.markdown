@@ -2,7 +2,7 @@
 layout: post
 title:  "Congratulations to Salma Salah – my first co-supervised PhD to get over the finishing line"
 date:   2023-04-20 00:00:00 +0000
-image: /assets/fatherhood.png
+image: /assets/SS_PhD_summary.png
 ---
 This April saw another first milestone for me with my one of my first PhD students that I have had the privilege of co-supervising passing their viva examination. Of course, all the congratulations belong to Salma for all the hard work, but nonetheless as a supervisor it is really rewarding to look back and reflect on the journey of the past four years.
 
