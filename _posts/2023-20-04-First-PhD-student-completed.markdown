@@ -12,6 +12,13 @@ I think a successful student-supervisor relationship is one of the cornerstones 
 
 A quick google search reveals a few different perspectives about what makes a successful relationship. But looking back on it, what were the fundamental principles that I focussed on? Well, reflecting on it, I think there are three areas that I prioritised.
 
+<p></p>
+<div style="text-align:center">
+	<img src="{{site.baseurl}}/assets/growth.jpg" alt="growth" style="width:500px;" />
+</div>
+<i>PhD supervision should be first and foremost about supporting the growth of the student.</i>
+<p></p>
+
 # My three cornerstones
 
 Firstly, I think a PhD should be based on *collegiality*. A partnership of equals, rather than a hierarchical boss-employee relationship. Yes, as a supervisor I have more technical knowledge at the beginning, but that doesn’t mean I know all the answers (it wouldn’t be research if I did, after all). Looking back on things, I think I learnt just as much about the topic as Salma did, and thus we were partners in that journey of discovery.
