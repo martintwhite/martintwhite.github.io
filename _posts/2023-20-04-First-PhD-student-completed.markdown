@@ -12,7 +12,7 @@ I think a successful student-supervisor relationship is one of the cornerstones 
 
 A quick google search reveals a few different perspectives about what makes a successful relationship. But looking back on it, what were the fundamental principles that I focussed on? Well, reflecting on it, I think there are three areas that I prioritised.
 
-style="text-align: center;
+<p> </p>
 <div style="text-align:center">
 	<img src="{{site.baseurl}}/assets/growth.jpg" alt="growth" style="width:500px;" />
 </div>
