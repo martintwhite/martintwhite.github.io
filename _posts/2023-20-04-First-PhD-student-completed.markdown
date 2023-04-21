@@ -16,7 +16,7 @@ A quick google search reveals a few different perspectives about what makes a su
 <div style="text-align:center">
 	<img src="{{site.baseurl}}/assets/growth.jpg" alt="growth" style="width:500px;" />
 </div>
-<i>PhD supervision should be first and foremost about supporting the growth of the student.</i>
+<i style="text-align: center>PhD supervision should be first and foremost about supporting the growth of the student.</i>
 <p></p>
 
 # My three cornerstones
