@@ -30,8 +30,8 @@ The choice between axial or radial is generally a question of scale. It is hard 
 
 <br/>
 <div style="text-align:center">
-	<img src="{{site.baseurl}}/assets/axial_turbine_example.jpg" alt="axial-turbine" style="height:400px;" />
-	<img src="{{site.baseurl}}/assets/radial_turbine_example.jpg" alt="radial-turbine" style="height:400px;" />
+	<img src="{{site.baseurl}}/assets/axial_turb_example.jpg" alt="axial-turbine" style="height:400px;" />
+	<img src="{{site.baseurl}}/assets/radial_turb_example.jpg" alt="radial-turbine" style="height:400px;" />
 </div>
 <br/>
 *The left figure shows the rotor of a multi-stage axial turbine The right shows the rotor of a 90° radial in-flow turbine. (Left image: from Siemens Pressebild, [http://www.siemens.com/](http://www.siemens.com/), CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0](http://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons; right image: Royonx, CC0, via Wikimedia Common).*
