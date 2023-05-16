@@ -34,7 +34,7 @@ The choice between axial or radial is generally a question of scale. It is hard 
 	<img src="{{site.baseurl}}/assets/radial_turb_example.jpg" alt="radial-turbine" style="height:400px;" />
 </div>
 <br/>
-*The left figure shows the rotor of a multi-stage axial turbine The right shows the rotor of a 90° radial in-flow turbine. (Left image: from Siemens Pressebild, [http://www.siemens.com/](http://www.siemens.com/), CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0](http://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons; right image: Royonx, CC0, via Wikimedia Common).*
+*The left figure shows the rotor of a multi-stage axial turbine. The right shows the rotor of a 90° radial in-flow turbine. (Left image: from Siemens Pressebild, [http://www.siemens.com/](http://www.siemens.com/), CC BY-SA 3.0 [http://creativecommons.org/licenses/by-sa/3.0](http://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons; right image: Royonx, CC0, via Wikimedia Common).*
 <br/><br/>
 
 # Axial turbine design for supercritical CO<sub>2</sub> turbines
@@ -45,7 +45,7 @@ Axial turbines for power plants in order of 100 MW<sub>e</sub> are an establishe
 
 However, for operation with both pure supercritical CO<sub>2</sub> and CO<sub>2</sub> blends such turbine designs are not readily available. Supercritical CO<sub>2</sub> turbine design is an evolving field, and experimental prototypes have been developed, and some remain under development. These all operate with pure CO<sub>2</sub> and have lower power ratings than being considered in SCARABEUS. Many of these have also been radial turbines.
 
-Therefore, the research at City has been an exciting opportunity to design an axial turbine for a 100 MW<sub>e</sub> power plant. Open questions that we aimed to address include *“what might an axial turbine for this application look like?”*, *“what performance might we expect from a turbine designed for this application?”*, and *“what is the influence of the selected CO2<sub>2</sub> blend on the resulting turbine design?”*.
+Therefore, the research at City has been an exciting opportunity to design an axial turbine for a 100 MW<sub>e</sub> power plant. Open questions that we aimed to address include *“what might an axial turbine for this application look like?”*, *“what performance might we expect from a turbine designed for this application?”*, and *“what is the influence of the selected CO<sub>2</sub> blend on the resulting turbine design?”*.
 
 To date, our team have done pretty well, and we have published a number of papers on the topic. In our most recent works, we have carried out a design activity to assess the achievable performance of axial turbines operating with CO2<sub>2</sub> blends when varying the number of turbine stages. This led to proposal of a 14-stage axial turbine design for the SCARABEUS project for which more detailed design activities have been carried out.
 
