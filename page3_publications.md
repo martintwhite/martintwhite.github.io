@@ -7,6 +7,7 @@ permalink: /publications/
 Below is a list of all of my scientific publications to date. If you are interested in any of these and want to find out more, please get in touch.
 
 <h3>Journal articles</h3>
+- Ogrodniczak, P., **White, M.**., 2023, "Non-equilibrium CFD simulation of the wet-to-dry expansion of the siloxane MM in a converging-diverging nozzle", Applied Thermal Engineering. [https://doi.org/10.1016/j.applthermaleng.2023.121158](https://doi.org/10.1016/j.applthermaleng.2023.121158)
 - Abdeldayem, A., Salah, S., **White, M.**, Salma, A., 2023, "A modified loss breakdown approach for axial turbines operating with blended supercritical carbon dioxide", Journal of Engineering for Gas Turbines and Power. [https://doi.org/10.1115/1.4062478](https://doi.org/10.1115/1.4062478)
 - Salah, S., Crespi, F., **White, M.**, Munoz, A., Paggini, A., Ruggiero, M., Sanchez, D., Salma, A., 2023, "Axial turbine flow path design for concentrated solar power plants operating with CO<sub>2</sub> blends", Applied Thermal Engineering, 230(A), 120612. [https://doi.org/10.1016/j.applthermaleng.2023.120612](https://doi.org/10.1016/j.applthermaleng.2023.120612)
 - Abdeldayem, A., **White, M.**, Paggini, A., Ruggiero, M., Sayma, A., 2022, "Integrated aerodynamic and structural blade shape optimisation of axial turbines operating with supercritical carbon dioxide blended with dopants", Journal of Engineering for Gas Turbines and Power, 144(10), 101016. [https://doi.org/10.1115/1.4055232](https://doi.org/10.1115/1.4055232)
@@ -31,8 +32,16 @@ Below is a list of all of my scientific publications to date. If you are interes
 - **White, M.**, Sayma, A., 2015, “The application of similitude theory for the performance prediction of radial turbines within small-scale low temperature organic Rankine cycles”, J Eng Gas Turb Power, 137(12), 122605. [https://doi.org/10.1115/1.4030836](https://doi.org/10.1115/1.4030836)
 - **White, M.**, Sayma, A., 2015, “System and component modelling and optimisation for an efficient 10 kWe low-temperature organic Rankine cycle utilising a radial inflow expander”, P I Mech Eng A-J Pow,  229(7), 795—809. [https://doi.org/10.1177/0957650915574211](https://doi.org/10.1177/0957650915574211)
 
+<h3>Books</h3>
+- Handagama, N., **White, M.**, Sapin, P., Markides, C., 2023, "Renewable and Waste-heat Utilisation Technologies", Cambridge University Press. [ https://doi.org/10.1017/9781108691093](https://doi.org/10.1017/9781108691093)
+
+<h3>Books (Edited)</h3>
+- **White, M.**, El Samad, T., Karathanassis, I., Sayma, A., Pini, M., Guardone, A., 2023, "Proceedings of the 4th International Seminar on Non-Ideal Compressible Fluid Dynamics for Propulsion and Power", Springer. [https://doi.org/10.1007/978-3-031-30936-6](https://doi.org/10.1007/978-3-031-30936-6)
+
+
 <h3>Conference papers</h3>
 - Abdeldayem, A., Salah, S., Aqel, O., **White, M.**, Salma, A., 2023, "Design of a 130 MW axial turbine operating with a supercritical carbon dioxide mixture for the SCARABEUS project", 15th European Conference on Turbomachinery Fluid Dynamics & Thermodynamics, 24-28 April, Budapest, Hungary.
+- Ogrodniczak, P., **White, M.**., 2022, "Numerical validation of a two-phase nozzle design tool based on the two-fluid model applied to wet-to-dry expansion of organic fluids", Proceedings of the 4th International Seminar on Non-Ideal Compressible Fluid Dynamics: NICFD 2022, 3-4 November, London, UK.
 - **White, M.**, Turunen-Saaresti, T., 2021, "Simulation of a supersonic stator vane under two-phase inlet conditions", 6th International Seminar on ORC Power Systems, 11-13th October, Munich, Germany. [https://doi.org/10.14459/2021mp1632898](https://doi.org/10.14459/2021mp1632898)
 - Abdeldayem, A., **White, M.**, Sayma, A., 2021, "Comparison of CFD predictions of supercritical carbon dioxide axial flow turbines using a number of turbulence models", GT2021 ASME Turbo Expo, 7-11th June, Online. [https://doi.org/10.1115/GT2021-58883](https://doi.org/10.1115/GT2021-58883)
 - Aqel, O., **White, M.**, Sayma, A., 2021, "Binary interaction uncertainty in the optimisation of a transcritical cycle: Consequences on cycle and turbine design", The 4th European sCO2 Conference for Energy Systems, 23-24th March, Online. [https://doi.org/10.17185/duepublico/73959](https://doi.org/10.17185/duepublico/73959)
