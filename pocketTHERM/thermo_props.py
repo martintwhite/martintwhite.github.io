@@ -579,6 +579,8 @@ class pr_fluid:
         ssatv = []
         hsatl = []
         hsatv = []
+        dsatl = []
+        dsatv = []
 
         # compute saturation properties:
         for i in range(n):
@@ -588,14 +590,17 @@ class pr_fluid:
             Tsat.append(self.tsat)
             ssatl.append(self.smass_l)
             hsatl.append(self.hmass_l)
+            dsatl.append(self.rhomass_l)
             ssatv.append(self.smass_v)
             hsatv.append(self.hmass_v)
+            dsatv.append(self.rhomass_v)
 
         # combine liquid and vapour properties:
         self.Tsat = np.concatenate([Tsat,np.flip(Tsat)])
         self.psat = np.concatenate([psat,np.flip(psat)])
         self.hsat = np.concatenate([hsatl,np.flip(hsatv)])
         self.ssat = np.concatenate([ssatl,np.flip(ssatv)])
+        self.dsat = np.concatenate([dsatl,np.flip(dsatv)])
         
     ##########################################################################
     # calculation of speed of sound:

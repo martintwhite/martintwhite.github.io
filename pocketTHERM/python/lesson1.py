@@ -11,6 +11,8 @@ fig.set_size_inches(4, 4)
 ax.set_position([0.175,0.125,0.80,0.85])
 display(fig,target="plt-psat-single")
 display(fig,target="plt-tcond-pr")
+
+plt.tight_layout()
 plt.close(fig)
 
 # fontsize for in-figure text:
@@ -71,7 +73,7 @@ def _p_saturation_single(*args, **kwargs):
     
     # strings for plot:
     T_sat_str  = 'Saturation temperature = ' + "{:.2f}".format(Tl) + ' K'
-    p_sat_str  = 'Saturation temperature = ' + "{:.2f}".format(p/1e5) + ' bar'
+    p_sat_str  = 'Saturation pressure = ' + "{:.2f}".format(p/1e5) + ' bar'
     d_satl_str = 'Liquid density = ' + "{:.2f}".format(dl) + ' kg/m3'
     h_satl_str = 'Liquid enthalpy = ' + "{:.2f}".format(hl/1e3) + ' kJ/kg'
     s_satl_str = 'Liquid entropy = ' + "{:.2f}".format(sl-smin) + ' J/(kg K)'

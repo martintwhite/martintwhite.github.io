@@ -68,10 +68,12 @@ def _transcritical(*args, **kwargs):
     
     # update T-s plot:
     fig, ax = orc_simulator.plot_cycle_ts(fluid,props,th,tc,df)
-    ax.set_ylim((tmin,513))
-    ax.text(50,513-8,eta_str,color='k',size=fs)
-    ax.text(50,513-16,m_str,color='k',size=fs)
-    ax.text(50,513-24,Wn_str,color='k',size=fs)    
+#    ax.set_ylim((tmin,513))
+    ax.set_xlim(-1200,750)
+    ax.set_ylim(273,513)
+    ax.text(-1150,513-8,eta_str,color='k',size=fs)
+    ax.text(-1150,513-16,m_str,color='k',size=fs)
+    ax.text(-1150,513-24,Wn_str,color='k',size=fs)    
     ax.set_position([0.175,0.125,0.80,0.85])
     fig.set_size_inches(4, 4)
     display(fig,target="plt-pr-supercrit")
@@ -81,7 +83,7 @@ def _two_phase(*args, **kwargs):
     
     # fixed inputs:
     hot = [423,1,1000]            # heat-source conditions    
-    x   = [303,2,10,0.5,0.7,373]  # cycle variables
+    x   = [303,2,10,0.5,0.0,373]  # cycle variables
     
     # get inputs:
     x[3] = float(document.getElementById("inpt-vapour-quality").value)/100
@@ -95,7 +97,9 @@ def _two_phase(*args, **kwargs):
     # update T-s plot:
     fig, ax = orc_simulator.plot_cycle_ts(fluid,props,th,tc,df)
     ax.set_ylim((tmin,tmax))
-    ax.set_xlim((0,1600))
+#    ax.set_xlim((0,1600))
+    ax.set_xlim(-1200,550)
+    ax.set_ylim(273,473)
     ax.set_position([0.175,0.125,0.80,0.85])
     fig.set_size_inches(4, 4)
     display(fig,target="plt-vapour-quality")

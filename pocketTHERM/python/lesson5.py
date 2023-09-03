@@ -65,10 +65,12 @@ def _heat_source_outlet(*args, **kwargs):
     
     # update T-s plot:
     fig, ax = orc_simulator.plot_cycle_ts(fluid,props,th,tc,df)
-    ax.set_ylim((tmin,tmax))
-    ax.text(50,tmax-8,eta_str,color='k',size=fs)
-    ax.text(50,tmax-16,m_str,color='k',size=fs)
-    ax.text(50,tmax-24,Wn_str,color='k',size=fs)    
+#    ax.set_ylim((tmin,tmax))
+    ax.set_xlim(-1200,600)
+    ax.set_ylim(273,473)
+    ax.text(-1150,473-8,eta_str,color='k',size=fs)
+    ax.text(-1150,473-16,m_str,color='k',size=fs)
+    ax.text(-1150,473-24,Wn_str,color='k',size=fs)    
     ax.set_position([0.175,0.125,0.80,0.85])
     fig.set_size_inches(4, 4)
     display(fig,target="plt-hot-out")
@@ -87,7 +89,9 @@ def _heat_sink_mass(*args, **kwargs):
     
     # update T-s plot:
     fig, ax = orc_simulator.plot_cycle_ts(fluid,props,th,tc,df)
-    ax.set_ylim((tmin,tmax))
+#    ax.set_ylim((tmin,tmax))
+    ax.set_xlim(-1200,600)
+    ax.set_ylim(273,473)
     ax.set_position([0.175,0.125,0.80,0.85])
     fig.set_size_inches(4, 4)
     display(fig,target="plt-cold-mass")
