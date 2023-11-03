@@ -103,6 +103,20 @@ def _single_cycle(*args, **kwargs):
     document.getElementById("pp-hot").innerHTML = "{:.3f}".format(min(pp[0]))
     document.getElementById("pp-cold").innerHTML = "{:.3f}".format(min(pp[1]))
     document.getElementById("pp-recup").innerHTML = "{:.3f}".format(pp[2])
+    
+    # change text color if pinch point is negative:
+    if min(pp[0]) < 1:
+        document.getElementById("pp-hot").style.color = '#d00'
+    else:
+        document.getElementById("pp-hot").style.color = '#000000'
+    if min(pp[1]) < 1:
+        document.getElementById("pp-cold").style.color = '#d00'
+    else:
+        document.getElementById("pp-cold").style.color = '#000000'
+    if pp[2] < 1:
+        document.getElementById("pp-recup").style.color = '#d00'
+    else:
+        document.getElementById("pp-recup").style.color = '#000000'
 
     # reset the plot:
     document.getElementById("single_study_plot").innerHTML = ""
@@ -261,6 +275,20 @@ def _param_cycle(*args, **kwargs):
         document.getElementById("pph-"+str(i+1)).innerHTML = "{:.3f}".format(min(pp[0]))
         document.getElementById("ppc-"+str(i+1)).innerHTML = "{:.3f}".format(min(pp[1]))
         document.getElementById("ppr-"+str(i+1)).innerHTML = "{:.3f}".format(pp[2])
+        
+        # change text color if pinch point is negative:
+        if min(pp[0]) < 1:
+            document.getElementById("pph-"+str(i+1)).style.color = '#d00'
+        else:
+            document.getElementById("pph-"+str(i+1)).style.color = '#000000'
+        if min(pp[1]) < 1:
+            document.getElementById("ppc-"+str(i+1)).style.color = '#d00'
+        else:
+            document.getElementById("ppc-"+str(i+1)).style.color = '#000000'
+        if pp[2] < 1:
+            document.getElementById("ppr-"+str(i+1)).style.color = '#d00'
+        else:
+            document.getElementById("ppr-"+str(i+1)).style.color = '#000000'
 
 # run function on click:    
 single_cycle = create_proxy(_single_cycle)

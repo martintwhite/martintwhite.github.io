@@ -2,7 +2,7 @@
 layout: post
 title:  "Congratulations to Salma Salah – my first co-supervised PhD to get over the finishing line"
 date:   2023-04-20 00:00:00 +0000
-image: /assets/growth.jpg
+image: /assets/fatherhood.png
 ---
 This April saw another first milestone for me with my one of my first PhD students that I have had the privilege of co-supervising passing their viva examination. Of course, all the congratulations belong to Salma for all the hard work, but nonetheless as a supervisor it is really rewarding to look back and reflect on the journey of the past four years.
 
@@ -11,12 +11,6 @@ Four years ago, I was still working as a Postdoctoral Researcher and excitedly a
 I think a successful student-supervisor relationship is one of the cornerstones of a successful PhD. Often when people start thinking about a PhD, they might often focus on the research topic. But making sure that the supervisor is a good fit is equally important. For this reason, when I was recently recruiting my first PhD student at Sussex, I gave prospective applicants the contact details of my current PhD students so they can find out what I was like to work with.
 
 A quick google search reveals a few different perspectives about what makes a successful relationship. But looking back on it, what were the fundamental principles that I focussed on? Well, reflecting on it, I think there are three areas that I prioritised.
-
-<p> </p>
-<div style="text-align:center">
-	<img src="{{site.baseurl}}/assets/growth.jpg" alt="growth" style="width:500px;" />
-</div>
-<i>PhD supervision should be first and foremost about supporting the growth of the student.</i>
 
 # My three cornerstones
 

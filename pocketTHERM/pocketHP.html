@@ -138,6 +138,7 @@
         <div class="body-contents">
             <h2>Fixed parameters</h2>
             <p>&nbsp</p>
+ <p>The general goal for a heat pump designer is to design the system for a particular application. This generally corresponds to a known heat source and target heat sink. The calculator assumes both the heat source and heat sink are defined as sensible fluid streams with a finite mass-flow rate and constant specific-heat capacity. Enter those details below.</p><p>&nbsp</p>
             <div class="calc-begin">
                 <!-------------- Heat-source: ---------------->
                 <div class="heat-source">
@@ -197,6 +198,8 @@
                 <div class="comp-eff">
                     <h3><b>Component efficiencies:</b></h3>
                     <p>&nbsp</p>
+                    <p>As a first assumption it is generally acceptable to assume that key system components, namely the compressor, operate with a fixed isentropic efficiency. Enter an assumption for that below.</p>
+                    <p>&nbsp</p>
 
                     <div class="form-group">
                         <label for="compressor-efficiency">Compressor efficiency [%]:</label>
@@ -214,6 +217,8 @@
         <div class="body-contents">
   
             <h2>Cycles variables</h2>
+            <p>&nbsp</p>
+            <p>To optimise the performance of the heat pump system, the heat pump designer has a number of different levers to pull. This includes changing the working fluid (i.e., the fluid circulating within the system), alongside a number of different thermodynamic variables. You can select the working fluid, and provide values for the cycle variables below.</p>
             <p>&nbsp</p>
 
             <div class="calc-begin">
@@ -268,18 +273,26 @@
         <div class="body-contents">
             <h2>Single cycle study</h2>
             <p>&nbsp</p>
+            <p>Having now selected your set of variables, it's time to see how the cycle performs. Hit the button below to find out. The results in the table summarise key performance metrics, as well as the work or thermal load of each component. The UA values are an indicator of the heat exchanger requirements and the pinch points indicate the minimum temperature differences in each heat exchange process.</p>
+            <p>&nbsp</p>
+            <p>It is also useful to view the cycle on a thermodynamic plane of choice. You can choose between temperature-entropy, pressure-enthalpy and pressure-volume. In the resulting figures, the green region indicates the state points of the working fluid throughout the cycle. Where relevant, the heat source (blue) and heat sink (red) temperature profiles are superimposed onto the cycle.</p>
+            <p>&nbsp</p>
  
             <div class="calc-begin">
                 <select name="select-types" id="single-study-select" type="submit" class="custom-select" style="width:250px">
-                    <option value="Temperature-entropy">temperature-entropy (Ts)</option>
-                    <!-- <option value="Pressure-enthalpy">Pressure Enthalpy(Ph)</option>
-                    <option value="Pressure-volumn">Pressure Volumn(pv)</option> -->
+                    <option value="temperature-entropy">temperature-entropy (Ts)</option>
+                    <option value="pressure-enthalpy">pressure-enthalpy (ph)</option>
+                    <option value="pressure-volume">pressure-volume (pv)</option>
                 </select> 
                 <button id="single-cycle-hp" class="btn" type="button" style="font-size: 14px;">Run single study</button>
                 <p>&nbsp</p>
             </div>
 
-            <div id="cycle_Ts_diagram"></div>
+            <div id="single_study_plot"></div>
+
+	    <p>&nbsp</p>
+	    <p>Note: Negative pinch points (reported in red below) indicate unphysical heat exchange profiles, and therefore indicate infeasible heat pump system configurations. In general, the best performance can be expected when the pinch points are minimised, but still positive. However, very low pinch points imply large heat transfer areas.</p>
+ 	    <p>&nbsp</p>
 
             <table class="styled-table">                
                 <tbody>
@@ -443,6 +456,10 @@
                 <p>&nbsp</p>
                 <button id="param-cycle-hp" class="btn" type="button" style="font-size: 14px;">Run parametric study</button>
             </div>
+
+	    <p>&nbsp</p>
+	    <p>Remember, negative pinch points indicate unphysical heat exchange profiles, and therefore indicate infeasible heat pump system configurations.<p>
+	    <p>&nbsp</p>
 
             <div class="body">
                 <table class="styled-table">

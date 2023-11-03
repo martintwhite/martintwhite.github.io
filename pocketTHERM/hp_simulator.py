@@ -522,6 +522,175 @@ def plot_cycle_ts(flu,props,th,tc,*args):
     ax.set_ylabel('Temperature, T [K]')
     ax.set_xlim((0,smax-smin))
     ax.set_ylim((tmin,tmax))
+    
+    # range of axis:
+    ds = smax-smin
+    dt = tmax-tmin
+        
+    # label cycle points:
+    txt_index = np.array([  0,  1 ,  5 ,  6  ]) 
+    txt_labs  = [ '1','2','3','4' ]   
+    s_shift   = np.array([ 0.03,  0.03, -0.05, -0.05])*ds
+    t_shift   = np.array([-0.00,  0.00,  0.00,  0.00])*dt    
+    for i in range(len(txt_index)):
+        j = txt_index[i]
+        ax.text(s[j]+s_shift[i]-smin,t[j]+t_shift[i],txt_labs[i],color='k',size=10)
+
+    return fig, ax
+
+################################################################################
+# plot p-h diagram:
+def plot_cycle_ph(flu,props,*args):
+
+    # construct saturation curve:
+    if ((len(args) == 0) or ((len(args) == 1) and (args[0] is None))): 
+        flu.saturation_curve(100)
+        psat = flu.psat
+        hsat = flu.hsat
+    else:
+        df   = args[0]
+        psat = df['p_sat']
+        hsat = df['h_sat']
+
+    # state points for p-h diagram:
+    t = props[0,:]
+    p = props[1,:]
+    h = props[2,:]   
+    s = props[3,:]
+
+    # determine axis limites and scaling:
+    h_cyc_min = h[6]
+    h_cyc_max = h[1]
+    p_cyc_min = p[0]
+    p_cyc_max = p[1]  
+    dh = h_cyc_max - h_cyc_min
+    dp = p_cyc_max - p_cyc_min
+    hmin = h_cyc_min - 0.1*dh
+    hmax = h_cyc_max + 0.1*dh
+    pmin = p_cyc_min - 0.1*dp
+    pmax = p_cyc_max + 0.1*dp
+
+    fig, ax = plt.subplots()
+
+    # plot ph diagram:
+    ax.plot(hsat/1e3,psat/1e5,'k-',linewidth=1)
+    ax.fill(h/1e3,p/1e5,facecolor='green', alpha=0.5, linewidth=1)
+    ax.plot(h/1e3,p/1e5,'g-',linewidth=1)
+    ax.plot(h/1e3,p/1e5,'go',markersize=3)
+    ax.set_xlabel('Enthalpy, h [kJ/kg]')
+    ax.set_ylabel('Pressure, P [bar]')
+    ax.set_xlim((hmin/1e3,hmax/1e3))
+    ax.set_ylim((pmin/1e5,pmax/1e5))
+    
+    # range of axis:
+    dp = pmax-pmin
+    dh = hmax-hmin
+    
+    # label cycle points:
+    txt_index = np.array([  0,  1  , 5 ,  6  ]) 
+    txt_labs  = [ '1','2','3','4' ]
+    h_shift   = np.array([ 0.03, 0.03, -0.05, -0.05])*dh
+    p_shift   = np.array([ 0.00, 0.00, -0.00, -0.00])*dp    
+    for i in range(len(txt_index)):
+        j = txt_index[i]
+        ax.text((h[j]+h_shift[i])/1e3,(p[j]+p_shift[i])/1e5,txt_labs[i],color='k',size=10)
+
+    return fig, ax
+
+################################################################################
+# plot p-v diagram:
+def plot_cycle_pv(flu,props,*args):
+
+    # construct saturation curve:
+    if ((len(args) == 0) or ((len(args) == 1) and (args[0] is None))): 
+        flu.saturation_curve(100)
+        psat = flu.psat
+        vsat = 1/flu.dsat
+    else:
+        df   = args[0]
+        psat = df['p_sat']
+        dsat = df['d_sat']
+        vsat = 1/dsat
+
+    # state points for p-v diagram:
+    t = props[0,:]
+    p = props[1,:]
+    h = props[2,:]   
+    s = props[3,:]
+    v = 1/props[4,:]
+    
+    # create compression:
+    p_com = np.linspace(p[0],p[1],50)
+    grad  = (t[1]-t[0])/(p[1]-p[0])
+    incp  = t[0] - grad*p[0]
+    t_com = grad*p_com + incp
+    v_com = np.zeros(len(p_com))
+    v_com[0] = v[0]
+    for i in range(1,len(p_com)-1,1):
+        flu.tpflash(t_com[i],p_com[i],1)
+        v_com[i] = 1/flu.fluid.rhomass()
+    v_com[len(p_com)-1] = v[1]
+    
+    # create expansion:
+    p_exp = np.linspace(p[5],p[6],20)
+    h_exp = h[5]
+    v_exp = np.zeros(len(p_exp))
+    v_exp[0] = v[5]
+    for i in range(1,len(p_exp)-1):
+        flu.saturation_p(p_exp[i],2)
+        tsat = flu.tsat
+        hl = flu.hmass_l
+        vl = 1/flu.rhomass_l
+        hv = flu.hmass_v
+        vv = 1/flu.rhomass_v
+        if h_exp < hl:
+            flu.phflash_mass(p_exp[i],h_exp,0,[tsat,p_exp[i],hl])
+            v_exp[i] = 1/flu.fluid.rhomass()
+        else:
+            q = (h_exp - hl)/(hv - hl)
+            v_exp[i] = vl + q*(vv - vl)
+    v_exp[len(p_exp)-1] = v[6]
+    
+    # combine isoarbars:
+    p_ts = np.concatenate((p_com,p[1:6],p_exp,p[6:9],p[0]),axis=None)
+    v_ts = np.concatenate((v_com,v[1:6],v_exp,v[6:9],v[0]),axis=None)
+    
+    # determine axis limites and scaling:
+    v_cyc_min = v[5]
+    v_cyc_max = v[0]
+    p_cyc_min = p[0]
+    p_cyc_max = p[1]  
+    dv = v_cyc_max - v_cyc_min
+    dp = p_cyc_max - p_cyc_min
+    vmin = v_cyc_min - 0.1*dv
+    vmax = v_cyc_max + 0.1*dv
+    pmin = p_cyc_min - 0.1*dp
+    pmax = p_cyc_max + 0.1*dp
+
+    fig, ax = plt.subplots()
+    
+    # plot pv diagram:
+    ax.plot(vsat,psat/1e5,'k-',linewidth=1)
+    ax.fill(v_ts,p_ts/1e5,facecolor='green', alpha=0.5, linewidth=1)
+    ax.plot(v_ts,p_ts/1e5,'g-',linewidth=1)
+    ax.plot(v,p/1e5,'go',markersize=3)
+    ax.set_xlabel('Specific volume, v [$\mathregular{m^{3}}$/kg]')
+    ax.set_ylabel('Pressure, P [bar]')
+    ax.set_xlim((vmin,vmax))
+    ax.set_ylim((pmin/1e5,pmax/1e5))
+    
+    # range of axis:
+    dp = pmax-pmin
+    dv = vmax-vmin
+    
+    # label cycle points:
+    txt_index = np.array([  0,  1 , 5 ,  6  ]) 
+    txt_labs  = [ '1','2','3','4']
+    v_shift   = np.array([ 0.03, 0.03, -0.05, -0.05])*dv
+    p_shift   = np.array([-0.00, 0.00, 0.00, -0.02])*dp    
+    for i in range(len(txt_index)):
+        j = txt_index[i]
+        ax.text((v[j]+v_shift[i]),(p[j]+p_shift[i])/1e5,txt_labs[i],color='k',size=10)
 
     return fig, ax
     

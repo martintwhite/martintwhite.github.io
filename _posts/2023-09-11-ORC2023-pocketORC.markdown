@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "ORC 2023 and release of pocketORC"
+date:   2023-09-11 00:00:00 +0000
+categories: research
+---
+At the beginning of the month I attended ORC 2023, the leading conference on ORC power systems, and took the opportunity to launch pocketORC - a web-based calculator intended for teaching organic Rankine cycle power systems.
+
+ORC 2023, more formally known as the 7th International Seminar on ORC Power Systems, took place in Seville, Spain, during the first week of September. It was great to see this community come back together and meet in-person once again after four long years (there was of course an on-line ORC 2021 in the middle). It was a great opportunity to once again share ideas with friends and colleagues, and get the latest insights in the field. I was also looking forward to bit of summer sun - although the irony was that the conference took place during a UK heat wave and it ended up being hotter in the UK!
+
+One of my PhD students, Pawel, presented their latest work on the optimisation of nozzles for wet-to-dry expansion, which was well received	by the community. However, for me, this conference was a bit of a first. Rather than presenting my latest research, I took the opportunity for a slightly more altruistic contribution through a submission to the teaching track. In particular, I shared details about a small pet-project I have been working on in the background for a while: pocketORC.
+<p>&nbsp;</p>
+<div style="text-align:center">
+	<img src="{{site.baseurl}}/assets/MWhite_ORC2023_presentation.jpg" alt="wet_to_dry_CFD" style="width:500px;" />
+</div>
+<p>&nbsp;</p>
+
+### What is pocketORC?
+pocketORC is a steady-state design model for organic Rankine cycle (ORC) power plants that operates straight from the browser (and hence from the phone in your pocket). Essentially, it is a collection of Python code that I have developed for computing thermodynamic properties of working fluids, and carrying out thermodynamic analysis of ORC systems. Through the development of pocketORC, this code has been turned into a web-based calculator that anybody can access via a web browser and carry out ORC thermodynamic analysis using the graphical-user interface. Alongside that, pocketORC contains self paced lessons that talk you through and introduce the main model inputs and variables.
+
+You can take pocketORC for a spin by [clicking here](https://martintwhite.github.io/pocketTHERM/pocketORC.html). But to whet your appetite, below is an example of how it can be used to carry out single-point design studies.
+
+<p>&nbsp;</p>
+<div style="text-align:center">
+    <video width="720px" controls>
+        <source src="{{site.baseurl}}/assets/pocketORC_single.mp4" type="video/mp4" style="width:900px;" >
+    </video> 
+</div>
+<p></p>
+<p>&nbsp;</p>
+
+### Acknowledgement
+The creation of pocketORC was supported by the Royal Academy of Engineering who funded the summer internship of Piyathida Suwannakat which helped get this project to the finish line (Summer 2023).

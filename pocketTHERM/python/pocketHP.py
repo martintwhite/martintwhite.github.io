@@ -16,7 +16,7 @@ func = lambda x:0.1 ** 2
 fig, ax = plt.subplots()
 fig.set_size_inches(4, 4)
 ax.set_position([0.175, 0.125, 0.80, 0.85])
-display(fig,target="cycle_Ts_diagram")
+display(fig,target="single_study_plot")
 plt.tight_layout()
 plt.close(fig)
 
@@ -101,15 +101,34 @@ def single_Cycle(*args, **kwargs):
     document.getElementById("pp-cold").innerHTML = "{:.3f}".format(min(pp[1]))
     document.getElementById("pp-recup").innerHTML = "{:.3f}".format(pp[2])
     
+    # change text color if pinch point is negative:
+    if min(pp[0]) < 1:
+        document.getElementById("pp-hot").style.color = '#d00'
+    else:
+        document.getElementById("pp-hot").style.color = '#000000'
+    if min(pp[1]) < 1:
+        document.getElementById("pp-cold").style.color = '#d00'
+    else:
+        document.getElementById("pp-cold").style.color = '#000000'
+    if pp[2] < 1:
+        document.getElementById("pp-recup").style.color = '#d00'
+    else:
+        document.getElementById("pp-recup").style.color = '#000000'
+    
     # reset the plot:
-    document.getElementById("cycle_Ts_diagram"). innerHTML = ""
+    document.getElementById("single_study_plot").innerHTML = ""
 
-    # update 
-    document.getElementById("cycle_Ts_diagram").innerHTML = ""
-    fig, ax = hp_simulator.plot_cycle_ts(fluid,props,th,tc, df)
-    ax.set_position([0.175,0.125,0.80,0.85])
+    # update plot:
+    singleParam = document.getElementById("single-study-select").value
+    if singleParam == "temperature-entropy":    
+        fig, ax = hp_simulator.plot_cycle_ts(fluid,props,th,tc, df)
+    elif singleParam == "pressure-enthalpy":
+        fig, ax = hp_simulator.plot_cycle_ph(fluid,props,df)
+    elif singleParam == "pressure-volume":
+        fig, ax = hp_simulator.plot_cycle_pv(fluid,props,df)
+    ax.set_position([0.175, 0.125, 0.80, 0.85])
     fig.set_size_inches(4, 4)
-    display(fig,target="cycle_Ts_diagram")
+    display(fig, target = "single_study_plot")
     plt.close(fig)
 
     # print Temperature [K]: 
@@ -242,6 +261,21 @@ def paramCycle(*args, **kwargs):
         document.getElementById("pph-"+str(i+1)).innerHTML = "{:.3f}".format(min(pp[0]))
         document.getElementById("ppc-"+str(i+1)).innerHTML = "{:.3f}".format(min(pp[1]))
         document.getElementById("ppr-"+str(i+1)).innerHTML = "{:.3f}".format(pp[2])
+        
+        # change text color if pinch point is negative:
+        if min(pp[0]) < 1:
+            document.getElementById("pph-"+str(i+1)).style.color = '#d00'
+        else:
+            document.getElementById("pph-"+str(i+1)).style.color = '#000000'
+        if min(pp[1]) < 1:
+            document.getElementById("ppc-"+str(i+1)).style.color = '#d00'
+        else:
+            document.getElementById("ppc-"+str(i+1)).style.color = '#000000'
+        if pp[2] < 1:
+            document.getElementById("ppr-"+str(i+1)).style.color = '#d00'
+        else:
+            document.getElementById("ppr-"+str(i+1)).style.color = '#000000'
+            
 
 # run function on click:    
 singleCycle = create_proxy(single_Cycle)
