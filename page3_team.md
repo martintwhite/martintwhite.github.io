@@ -52,17 +52,16 @@ Below you can find details of past and present team members. If you are interest
 ## Past PhD students
 
 # Dr Salma Salah (co-supervisor, 2019-2023)
-<!-- <div id="twocol_container">
+<div id="twocol_container">
     <div id="DivB">
-	<p>Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. </p>
+	<p>Salma is currently a lecturer at the British University in Egypt (BUE). She obtained her PhD in Mechanical Engineering from City, University of London, along with an MSc degree from Cairo University and a BSc degree from the British University in Egypt. During her doctoral studies, Salma dedicated almost four years to working on the design and analysis of supercritical carbon-dioxide axial turbines. Her research primarily focused on developing and optimising design tools for a 100 MW scale sCO<sub>2</sub> multi-stage axial turbine. This work contributed to a deeper understanding of the main design features of turbines operating with CO<sub>2</sub> mixtures. Furthermore, her work evaluated the capability of existing mean-line loss models in predicting the performance of turbines operating with CO<sub>2</sub> mixtures.</p>
     </div>
     <div id="DivA">
     	<div style="text-align:center">
-			<img src="{{site.baseurl}}/assets/Abdelrahman_profile.jpg" style="width:250px;" />
+			<img src="{{site.baseurl}}/assets/Salma_profile.jpg" style="width:250px;" />
 	</div>
     </div>
 </div>
--->
 
 # Dr Omar Aqel (co-supervisor, 2019-2023)
 <!--
