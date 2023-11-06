@@ -35,19 +35,16 @@ Below you can find details of past and present team members. If you are interest
 -->
 
 # Charlie Westpfel (2023-Present)
-<!--
 <div id="twocol_container">
     <div id="DivB">
-	<p>Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here.  </p>
+	<p>Charlie joined the University of Sussex in 2019 where he completed his master’s degree in Mechanical Engineering. He is now a PhD Candidate and Doctoral Tutor operating in the Thermo-Fluid Mechanics Research Centre. His research is focussed on developing a test facility to provide experimental validation of two-phase flow within expander technologies to improve organic Rankine cycle performance for the utilisation of low-temperature waste heat sources.</p>
     </div>
     <div id="DivA">
     	<div style="text-align:center">
-			<img src="{{site.baseurl}}/assets/Abdelrahman_profile.jpg" style="width:250px;" />
+			<img src="{{site.baseurl}}/assets/Charlie_profile.png" style="width:250px;" />
 	</div>
     </div>
 </div>
--->
-
 
 ## Past PhD students
 
