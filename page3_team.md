@@ -20,6 +20,8 @@ Below you can find details of past and present team members. If you are interest
     </div>
 </div>
 
+<p>&nbsp;</p>
+
 # Pawel Ogrodniczak (2020-Present)
 <!--
 <div id="twocol_container">
@@ -33,6 +35,8 @@ Below you can find details of past and present team members. If you are interest
     </div>
 </div>
 -->
+
+<p>&nbsp;</p>
 
 # Charlie Westpfel (2023-Present)
 <div id="twocol_container">
@@ -60,17 +64,16 @@ Below you can find details of past and present team members. If you are interest
     </div>
 </div>
 
+<p>&nbsp;</p>
+
 # Dr Omar Aqel (co-supervisor, 2019-2023)
-<!--
 <div id="twocol_container">
     <div id="DivB">
-	<p>Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here.  </p>
+	<p>Omar obtained a PhD in Mechanical Engineering from City, University of London, and a BEng from Birzeit University in Palestine. In his doctoral studies, Omar investigated cycle and turbine design optimisation for power plants utilising CO<sub>2</sub>-based working fluids. The work focused on the effect of molecular complexity on cycle layout selection, the effect of additive selection on the design of radial inflow turbines across power scales, and the modelling of uncertainty associated with the working fluid thermo-physical properties.</p>
     </div>
     <div id="DivA">
     	<div style="text-align:center">
-			<img src="{{site.baseurl}}/assets/Abdelrahman_profile.jpg" style="width:250px;" />
+			<img src="{{site.baseurl}}/assets/Omar_profile.jpeg" style="width:250px;" />
 	</div>
     </div>
 </div>
-
--->
