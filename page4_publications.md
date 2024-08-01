@@ -7,6 +7,7 @@ permalink: /publications/
 Below is a list of all of my scientific publications to date. If you are interested in any of these and want to find out more, please get in touch.
 
 <h3>Journal articles</h3>
+- **White, M.**, 2024, "pocketTHERM: A web-based tool for teaching non-ideal thermodynamic cycles", SoftwareX, 27, 101806. [https://doi.org/10.1016/j.softx.2024.101806](https://doi.org/10.1016/j.softx.2024.101806)
 - Aqel, O., **White, M.**, 2024, "Loss analysis in radial inflow turbines for supercritical CO<sub>2</sub> mixtures", Journal of Turbomachinery, 146(5), 051003. [https://doi.org/10.1115/1.4064193](https://doi.org/10.1115/1.4064193)
 - Salah, S., Abdeldayem, A., **White, M.**, Sayma, A., 2024, "Off-design performance assessment of an axial turbine for a 100 MWe concentrated solar power plant operating with CO<sub>2</sub> mixtures", Applied Thermal Engineering, 238, 122001. [https://doi.org/10.1016/j.applthermaleng.2023.122001](https://doi.org/10.1016/j.applthermaleng.2023.122001)
 - Abdeldayem, A., Paggini, A., Diurnal, T., Orazi, C., **White, M.**, Ruggiero, M., Sayma, A., 2024, "Integrated aerodynamic and mechanical design of a large-scale axial turbine operating with supercritical carbon dioxide mixtures", Journal of Engineering for Gas Turbines and Power, 146(2), 021011. [https://doi.org/10.1115/1.4063530](https://doi.org/10.1115/1.4063530)
