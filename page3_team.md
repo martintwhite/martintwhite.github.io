@@ -9,18 +9,16 @@ Below you can find details of past and present team members. If you are interest
 ## Current PhD students
 
 # Pawel Ogrodniczak (2020-Present)
-<!--
 <div id="twocol_container">
     <div id="DivB">
-	<p>Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here. Text to go here.  </p>
+	<p>Pawel Ogrodniczak completed his Master of Engineering degree in Mechanical Engineering at City, University of London, where he is currently pursuing a doctoral degree. His research focuses on the characterisation of two-phase expansion occurring in the nozzle of a turbomachine designed for novel two-phase organic Rankine cycles. Pawel employs numerical tools to simulate the flash boiling of molecularly complex fluids in converging-diverging channels. His findings provide insights into the complexities of such flows under supersonic conditions and help assess the feasibility of designing two-phase turbomachines for low-grade thermal energy utilisation and waste-heat recovery systems.</p>
     </div>
     <div id="DivA">
     	<div style="text-align:center">
-			<img src="{{site.baseurl}}/assets/Abdelrahman_profile.jpg" style="width:250px;" />
+			<img src="{{site.baseurl}}/assets/Pawel_profile.jpg" style="width:250px;" />
 	</div>
     </div>
 </div>
--->
 
 <p>&nbsp;</p>
 
